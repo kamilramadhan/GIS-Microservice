@@ -1,0 +1,23 @@
+# Ignore BPS API configuration (contains sensitive API keys)
+bps-config.js
+
+# Ignore node_modules if using npm
+node_modules/
+
+# Ignore cache files
+.cache/
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore backup files
+*.bak
+*~

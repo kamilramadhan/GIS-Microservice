@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard GIS - Produksi Padi Indonesia</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Dashboard Produksi Padi Indonesia</h1>
+            <p class="header-subtitle">Visualisasi Data Produksi Padi per Provinsi (2023)</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="grid-layout">
+                
+                <!-- Control Panel -->
+                <aside class="control-panel">
+                    <div class="card">
+                        <h2 class="card-title">Filter & Kontrol</h2>
+                        
+                        <!-- Year Selection -->
+                        <div class="form-group">
+                            <label for="yearSelect" class="form-label">Pilih Tahun:</label>
+                            <select id="yearSelect" class="form-select">
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023" selected>2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Month Selection -->
+                        <div class="form-group">
+                            <label for="monthSelect" class="form-label">Pilih Bulan:</label>
+                            <select id="monthSelect" class="form-select">
+                                <option value="jan">Januari</option>
+                                <option value="feb">Februari</option>
+                                <option value="mar">Maret</option>
+                                <option value="apr">April</option>
+                                <option value="may" selected>Mei</option>
+                                <option value="jun">Juni</option>
+                                <option value="jul">Juli</option>
+                                <option value="aug">Agustus</option>
+                                <option value="sep">September</option>
+                                <option value="oct">Oktober</option>
+                                <option value="nov">November</option>
+                                <option value="dec">Desember</option>
+                            </select>
+                        </div>
+
+                        <!-- Month Slider -->
+                        <div class="form-group">
+                            <label for="monthSlider" class="form-label">
+                                Slider Bulan: <span id="sliderValue">Mei</span>
+                            </label>
+                            <input type="range" id="monthSlider" class="form-slider" 
+                                   min="0" max="11" value="4" step="1">
+                        </div>
+
+                        <!-- Legend -->
+                        <div class="legend">
+                            <h3 class="legend-title">Legenda Produksi (ton)</h3>
+                            <div class="legend-items">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #fff5eb;"></span>
+                                    <span class="legend-text">&lt; 100.000</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #fed976;"></span>
+                                    <span class="legend-text">100.000 - 300.000</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #feb24c;"></span>
+                                    <span class="legend-text">300.000 - 600.000</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #fd8d3c;"></span>
+                                    <span class="legend-text">600.000 - 1.000.000</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #f03b20;"></span>
+                                    <span class="legend-text">1.000.000 - 2.000.000</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #bd0026;"></span>
+                                    <span class="legend-text">&gt; 2.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statistics -->
+                        <div class="stats">
+                            <h3 class="stats-title">Statistik Nasional</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-label">Total Produksi:</span>
+                                    <span class="stat-value" id="totalProduction">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Rata-rata:</span>
+                                    <span class="stat-value" id="avgProduction">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Tertinggi:</span>
+                                    <span class="stat-value" id="maxProduction">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Terendah:</span>
+                                    <span class="stat-value" id="minProduction">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Map Container -->
+                <section class="map-container">
+                    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                        <div class="loading-spinner"></div>
+                        <p class="loading-text">Memuat data dari BPS...</p>
+                    </div>
+                    <div id="map" class="map"></div>
+                </section>
+
+                <!-- Detail Panel -->
+                <aside class="detail-panel">
+                    <div class="card">
+                        <h2 class="card-title">Detail Provinsi</h2>
+                        <div id="provinceDetail" class="province-detail">
+                            <div class="detail-placeholder">
+                                <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                                </svg>
+                                <p class="placeholder-text">Klik pada provinsi di peta untuk melihat detail produksi padi</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Dashboard GIS Produksi Padi Indonesia | Data dari BPS (Badan Pusat Statistik)</p>
+            <p class="footer-subtext" id="dataSource">Memuat data tahun 2019-2025...</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    
+    <!-- BPS API Configuration -->
+    <script src="bps-config.dev.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
