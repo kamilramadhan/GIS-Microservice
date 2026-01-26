@@ -17,10 +17,44 @@
     <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <h1 class="header-title">Dashboard Produksi Padi Indonesia</h1>
-            <p class="header-subtitle">Visualisasi Data Produksi Padi per Provinsi (2023)</p>
+            <h1 class="header-title">Dashboard GIS Transmigrasi Indonesia</h1>
+            <p class="header-subtitle">Analisis Potensi Ekonomi Komoditas per Provinsi</p>
         </div>
     </header>
+
+    <!-- Dashboard Mode Selector -->
+    <section class="dashboard-selector">
+        <div class="container">
+            <div class="selector-tabs">
+                <button class="selector-tab active" data-mode="productivity">
+                    <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <span class="tab-text">Commodity Productivity Heatmap</span>
+                    <span class="tab-desc">Visualisasi produksi komoditas per provinsi</span>
+                </button>
+                
+                <button class="selector-tab" data-mode="economic">
+                    <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="tab-text">Commodity Economic/Price Heatmap</span>
+                    <span class="tab-desc">Indeks Potensi Ekonomi berdasarkan harga komoditas</span>
+                </button>
+                
+                <button class="selector-tab" data-mode="opportunity" disabled>
+                    <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span class="tab-text">Commodity Economic Opportunity Heatmap</span>
+                    <span class="tab-desc">Coming Soon - Analisis peluang ekonomi transmigrasi</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -30,7 +64,33 @@
                 <!-- Control Panel -->
                 <aside class="control-panel">
                     <div class="card">
-                        <h2 class="card-title">Filter & Kontrol</h2>
+                        <h2 class="card-title" id="controlPanelTitle">Filter & Kontrol</h2>
+                        
+                        <!-- Commodity Selection (for Economic mode) -->
+                        <div class="form-group" id="commodityGroup" style="display: none;">
+                            <label for="commoditySelect" class="form-label">Pilih Komoditas:</label>
+                            <select id="commoditySelect" class="form-select">
+                                <option value="beras_premium">Beras Premium</option>
+                                <option value="beras_medium">Beras Medium</option>
+                                <option value="cabai_merah">Cabai Merah</option>
+                                <option value="cabai_rawit">Cabai Rawit</option>
+                                <option value="bawang_merah">Bawang Merah</option>
+                                <option value="bawang_putih">Bawang Putih</option>
+                                <option value="daging_ayam">Daging Ayam</option>
+                                <option value="daging_sapi">Daging Sapi</option>
+                                <option value="telur_ayam">Telur Ayam</option>
+                                <option value="minyak_goreng">Minyak Goreng</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Market Type Selection (for Economic mode) -->
+                        <div class="form-group" id="marketTypeGroup" style="display: none;">
+                            <label for="marketTypeSelect" class="form-label">Jenis Pasar:</label>
+                            <select id="marketTypeSelect" class="form-select">
+                                <option value="traditional">Pasar Tradisional</option>
+                                <option value="modern">Pasar Modern</option>
+                            </select>
+                        </div>
                         
                         <!-- Year Selection -->
                         <div class="form-group">
@@ -75,56 +135,15 @@
                         </div>
 
                         <!-- Legend -->
-                        <div class="legend">
-                            <h3 class="legend-title">Legenda Produksi (ton)</h3>
-                            <div class="legend-items">
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #fff5eb;"></span>
-                                    <span class="legend-text">&lt; 100.000</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #fed976;"></span>
-                                    <span class="legend-text">100.000 - 300.000</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #feb24c;"></span>
-                                    <span class="legend-text">300.000 - 600.000</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #fd8d3c;"></span>
-                                    <span class="legend-text">600.000 - 1.000.000</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #f03b20;"></span>
-                                    <span class="legend-text">1.000.000 - 2.000.000</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-color" style="background-color: #bd0026;"></span>
-                                    <span class="legend-text">&gt; 2.000.000</span>
-                                </div>
-                            </div>
+                        <div class="legend" id="legendContainer">
+                            <!-- Legend will be dynamically updated based on mode -->
                         </div>
 
                         <!-- Statistics -->
                         <div class="stats">
-                            <h3 class="stats-title">Statistik Nasional</h3>
-                            <div class="stats-grid">
-                                <div class="stat-item">
-                                    <span class="stat-label">Total Produksi:</span>
-                                    <span class="stat-value" id="totalProduction">-</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-label">Rata-rata:</span>
-                                    <span class="stat-value" id="avgProduction">-</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-label">Tertinggi:</span>
-                                    <span class="stat-value" id="maxProduction">-</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-label">Terendah:</span>
-                                    <span class="stat-value" id="minProduction">-</span>
-                                </div>
+                            <h3 class="stats-title" id="statsTitle">Statistik Nasional</h3>
+                            <div class="stats-grid" id="statsContainer">
+                                <!-- Stats will be dynamically updated -->
                             </div>
                         </div>
                     </div>
@@ -161,8 +180,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">Dashboard GIS Produksi Padi Indonesia | Data dari BPS (Badan Pusat Statistik)</p>
-            <p class="footer-subtext" id="dataSource">Memuat data tahun 2019-2025...</p>
+            <p class="footer-text">Dashboard GIS Transmigrasi Indonesia | Data dari BPS & Bank Indonesia</p>
+            <p class="footer-subtext" id="dataSource">Memuat data...</p>
         </div>
     </footer>
 

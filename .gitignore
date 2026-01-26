@@ -1,23 +1,102 @@
-# Ignore BPS API configuration (contains sensitive API keys)
+# ==========================================
+# ENVIRONMENT & SECRETS
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
 bps-config.js
 
-# Ignore node_modules if using npm
+# ==========================================
+# DEPENDENCIES
+# ==========================================
 node_modules/
+vendor/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Ignore cache files
-.cache/
+# Go
+go.sum
+
+# ==========================================
+# DATABASES
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+data/*.sql
+data/backups/
+
+# ==========================================
+# DOCKER & BUILD
+# ==========================================
+docker-compose.override.yml
+.dockerignore
 *.log
 
-# Ignore OS files
+# ==========================================
+# OS FILES
+# ==========================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# Ignore IDE files
+# ==========================================
+# IDE & EDITORS
+# ==========================================
 .vscode/
 .idea/
 *.swp
 *.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+.vscode-test/
+.history/
 
-# Ignore backup files
+# ==========================================
+# CACHE & TEMPORARY
+# ==========================================
+.cache/
+*.tmp
+*.temp
+.sass-cache/
+.npm/
+.yarn/
+dist/
+build/
+coverage/
+
+# ==========================================
+# BACKUP FILES
+# ==========================================
 *.bak
 *~
+*.backup
+*.old
+
+# ==========================================
+# LOGS
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# KUBERNETES SECRETS (if using local configs)
+# ==========================================
+k8s/secrets.yaml
+k8s/*.secret.yaml
