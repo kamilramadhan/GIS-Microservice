@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard GIS - Produksi Padi Indonesia</title>
-    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           crossorigin=""/>
-    
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260220a">
 </head>
 <body>
     <!-- Header Section -->
@@ -28,25 +33,25 @@
             <div class="selector-tabs">
                 <button class="selector-tab active" data-mode="productivity">
                     <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                     </svg>
                     <span class="tab-text">Commodity Productivity Heatmap</span>
                     <span class="tab-desc">Visualisasi produksi komoditas per provinsi</span>
                 </button>
-                
+
                 <button class="selector-tab" data-mode="economic">
                     <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                     <span class="tab-text">Commodity Economic/Price Heatmap</span>
                     <span class="tab-desc">Indeks Potensi Ekonomi berdasarkan harga komoditas</span>
                 </button>
-                
+
                 <button class="selector-tab" data-mode="opportunity" disabled>
                     <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                     </svg>
                     <span class="tab-text">Commodity Economic Opportunity Heatmap</span>
@@ -60,12 +65,12 @@
     <main class="main-content">
         <div class="container">
             <div class="grid-layout">
-                
+
                 <!-- Control Panel -->
                 <aside class="control-panel">
                     <div class="card">
                         <h2 class="card-title" id="controlPanelTitle">Filter & Kontrol</h2>
-                        
+
                         <!-- Commodity Selection (for Economic mode) -->
                         <div class="form-group" id="commodityGroup" style="display: none;">
                             <label for="commoditySelect" class="form-label">Pilih Komoditas:</label>
@@ -82,7 +87,7 @@
                                 <option value="minyak_goreng">Minyak Goreng</option>
                             </select>
                         </div>
-                        
+
                         <!-- Market Type Selection (for Economic mode) -->
                         <div class="form-group" id="marketTypeGroup" style="display: none;">
                             <label for="marketTypeSelect" class="form-label">Jenis Pasar:</label>
@@ -91,21 +96,22 @@
                                 <option value="modern">Pasar Modern</option>
                             </select>
                         </div>
-                        
+
                         <!-- Year Selection -->
                         <div class="form-group">
                             <label for="yearSelect" class="form-label">Pilih Tahun:</label>
                             <select id="yearSelect" class="form-select">
-                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2025" selected>2025</option>
                                 <option value="2024">2024</option>
-                                <option value="2023" selected>2023</option>
+                                <option value="2023">2023</option>
                                 <option value="2022">2022</option>
                                 <option value="2021">2021</option>
                                 <option value="2020">2020</option>
                                 <option value="2019">2019</option>
                             </select>
                         </div>
-                        
+
                         <!-- Month Selection -->
                         <div class="form-group">
                             <label for="monthSelect" class="form-label">Pilih Bulan:</label>
@@ -130,8 +136,40 @@
                             <label for="monthSlider" class="form-label">
                                 Slider Bulan: <span id="sliderValue">Mei</span>
                             </label>
-                            <input type="range" id="monthSlider" class="form-slider" 
+                            <input type="range" id="monthSlider" class="form-slider"
                                    min="0" max="11" value="4" step="1">
+                        </div>
+
+                        <!-- Transmigration Layer Toggle -->
+                        <div class="form-group layer-toggle-group">
+                            <label class="layer-toggle-label">
+                                <span class="toggle-switch">
+                                    <input type="checkbox" id="transmigrasiToggle">
+                                    <span class="toggle-slider"></span>
+                                </span>
+                                <span class="toggle-text">
+                                    <span class="toggle-title">Kawasan Transmigrasi</span>
+                                    <span class="toggle-desc">Tampilkan batas desa transmigrasi</span>
+                                </span>
+                            </label>
+                            <!-- A/B Mode Selector -->
+                            <div id="transmigrasiModeSelector" class="transmigrasi-mode-selector" style="display: none;">
+                                <button class="mode-btn active" data-transmode="overlay" title="Mode Overlay - polygon batas desa">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M2 4L8 2L14 4L14 12L8 14L2 12Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.2"/>
+                                    </svg>
+                                    <span>Overlay</span>
+                                </button>
+                                <button class="mode-btn" data-transmode="pin" title="Mode Pin - marker titik desa">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 1C5.24 1 3 3.24 3 6C3 9.75 8 15 8 15C8 15 13 9.75 13 6C13 3.24 10.76 1 8 1ZM8 7.5C7.17 7.5 6.5 6.83 6.5 6C6.5 5.17 7.17 4.5 8 4.5C8.83 4.5 9.5 5.17 9.5 6C9.5 6.83 8.83 7.5 8 7.5Z" fill="currentColor"/>
+                                    </svg>
+                                    <span>Pin</span>
+                                </button>
+                            </div>
+                            <div id="transmigrasiInfo" class="transmigrasi-info" style="display: none;">
+                                <span class="transmigrasi-count" id="transmigrasiCount">0 desa</span>
+                            </div>
                         </div>
 
                         <!-- Legend -->
@@ -165,7 +203,7 @@
                         <div id="provinceDetail" class="province-detail">
                             <div class="detail-placeholder">
                                 <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
                                 </svg>
                                 <p class="placeholder-text">Klik pada provinsi di peta untuk melihat detail produksi padi</p>
@@ -189,11 +227,11 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
-    
+
     <!-- BPS API Configuration -->
     <script src="bps-config.dev.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="app.js"></script>
+
+    <!-- Custom JavaScript (cache-busted) -->
+    <script src="app.js?v=20260220a"></script>
 </body>
 </html>

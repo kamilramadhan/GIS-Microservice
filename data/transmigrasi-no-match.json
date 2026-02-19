@@ -1,0 +1,398 @@
+[
+  {
+    "provinsi": "Aceh",
+    "desa_trans": "SAMAR KILANG",
+    "desa_norm": "SAMAR KILANG",
+    "top_candidates": [
+      [
+        "Samar Dua",
+        "11.10.09.2004",
+        "0.67"
+      ],
+      [
+        "Gawar Belangi",
+        "11.13.04.2028",
+        "0.64"
+      ],
+      [
+        "Air Pinang",
+        "11.09.04.2024",
+        "0.64"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Aceh",
+    "desa_trans": "RELAS PAMEU",
+    "desa_norm": "RELAS PAMEU",
+    "top_candidates": [
+      [
+        "Lampageu",
+        "11.06.08.2004",
+        "0.63"
+      ],
+      [
+        "Meunasah Papeun",
+        "11.06.21.2001",
+        "0.62"
+      ],
+      [
+        "Blang Pateuk",
+        "11.15.02.2017",
+        "0.61"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Aceh",
+    "desa_trans": "TEGET",
+    "desa_norm": "TEGET",
+    "top_candidates": [
+      [
+        "Telege Atu",
+        "11.04.11.2020",
+        "0.67"
+      ],
+      [
+        "Teungkluet",
+        "11.18.08.2015",
+        "0.67"
+      ],
+      [
+        "Seuriget",
+        "11.74.02.2009",
+        "0.62"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "SANABIBI",
+    "desa_norm": "SANABIBI",
+    "top_candidates": [
+      [
+        "Bani-Bani",
+        "53.21.06.2005",
+        "0.62"
+      ],
+      [
+        "Kenebibi",
+        "53.04.05.2004",
+        "0.62"
+      ],
+      [
+        "Lamanabi",
+        "53.06.05.2023",
+        "0.62"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "REMASINGFUI",
+    "desa_norm": "REMASINGFUI",
+    "top_candidates": [
+      [
+        "Manufui",
+        "53.02.25.2003",
+        "0.67"
+      ],
+      [
+        "Tasinifu",
+        "53.03.13.2001",
+        "0.63"
+      ],
+      [
+        "Kamaifui",
+        "53.05.12.2005",
+        "0.63"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "PEIBULAK",
+    "desa_norm": "PEIBULAK",
+    "top_candidates": [
+      [
+        "Waiburak",
+        "53.06.10.2007",
+        "0.62"
+      ],
+      [
+        "Demulaka",
+        "53.08.16.2003",
+        "0.62"
+      ],
+      [
+        "Tebuk",
+        "53.07.04.2003",
+        "0.62"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "ULUKLUBUK",
+    "desa_norm": "ULUKLUBUK",
+    "top_candidates": [
+      [
+        "Ulupulu",
+        "53.16.02.2009",
+        "0.62"
+      ],
+      [
+        "Ulu Belu",
+        "53.09.02.2036",
+        "0.59"
+      ],
+      [
+        "Oelbubuk",
+        "53.02.30.2001",
+        "0.59"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "YUBUWAI",
+    "desa_norm": "YUBUWAI",
+    "top_candidates": [
+      [
+        "Uluwae I",
+        "53.09.15.2009",
+        "0.67"
+      ],
+      [
+        "Kuruwaki",
+        "53.11.10.2002",
+        "0.67"
+      ],
+      [
+        "Uluwae II",
+        "53.09.15.2010",
+        "0.62"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "IKISEO GEZU",
+    "desa_norm": "IKISEO GEZU",
+    "top_candidates": [
+      [
+        "Lise Pu'u",
+        "53.08.08.2024",
+        "0.53"
+      ],
+      [
+        "Lisedetu",
+        "53.08.08.2016",
+        "0.53"
+      ],
+      [
+        "Keoen",
+        "53.14.05.2007",
+        "0.50"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "LA'TAPU RUMBU",
+    "desa_norm": "LATAPU RUMBU",
+    "top_candidates": [
+      [
+        "Watu Rambung",
+        "53.15.09.2011",
+        "0.67"
+      ],
+      [
+        "Mata Lombu",
+        "53.18.10.2014",
+        "0.64"
+      ],
+      [
+        "Payola Umbu",
+        "53.18.01.2014",
+        "0.61"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Nusa Tenggara Timur",
+    "desa_trans": "REMANGSIFUI",
+    "desa_norm": "REMANGSIFUI",
+    "top_candidates": [
+      [
+        "Manufui",
+        "53.02.25.2003",
+        "0.67"
+      ],
+      [
+        "Kamaifui",
+        "53.05.12.2005",
+        "0.63"
+      ],
+      [
+        "Karang Sirih",
+        "53.02.01.1006",
+        "0.61"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Kalimantan Timur",
+    "desa_trans": "PASER",
+    "desa_norm": "PASER",
+    "top_candidates": [
+      [
+        "Empas",
+        "64.07.06.2001",
+        "0.60"
+      ],
+      [
+        "Muser",
+        "64.01.10.2006",
+        "0.60"
+      ],
+      [
+        "Dempar",
+        "64.07.16.2001",
+        "0.55"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Kalimantan Utara",
+    "desa_trans": "SEPUNGGUR",
+    "desa_norm": "SEPUNGGUR",
+    "top_candidates": [
+      [
+        "Seputuk",
+        "65.04.05.2001",
+        "0.62"
+      ],
+      [
+        "Sengkong",
+        "65.04.02.2002",
+        "0.59"
+      ],
+      [
+        "Seruyung",
+        "65.02.07.2006",
+        "0.59"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Sulawesi Tengah",
+    "desa_trans": "BULUPOUNTU",
+    "desa_norm": "BULUPOUNTU",
+    "top_candidates": [
+      [
+        "Buntuna",
+        "72.04.07.2008",
+        "0.59"
+      ],
+      [
+        "Bulu",
+        "72.01.07.2039",
+        "0.57"
+      ],
+      [
+        "Bulungkobit",
+        "72.07.04.2016",
+        "0.57"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Sulawesi Tengah",
+    "desa_trans": "RENO RENO",
+    "desa_norm": "RENO RENO",
+    "top_candidates": [
+      [
+        "Mendono",
+        "72.01.03.1010",
+        "0.62"
+      ],
+      [
+        "Ronononcu",
+        "72.02.21.1004",
+        "0.56"
+      ],
+      [
+        "Menyo'e",
+        "72.12.09.2014",
+        "0.53"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Gorontalo",
+    "desa_trans": "SANDALAN",
+    "desa_norm": "SANDALAN",
+    "top_candidates": [
+      [
+        "Cisadane",
+        "75.05.02.2023",
+        "0.62"
+      ],
+      [
+        "Gandaria",
+        "75.01.13.2016",
+        "0.62"
+      ],
+      [
+        "Pangadaa",
+        "75.01.24.2008",
+        "0.62"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Sulawesi Barat",
+    "desa_trans": "TANJUNG CINA",
+    "desa_norm": "TANJUNG CINA",
+    "top_candidates": [
+      [
+        "Tandung",
+        "76.04.01.2006",
+        "0.63"
+      ],
+      [
+        "Tangnga Tangnga",
+        "76.04.01.2003",
+        "0.59"
+      ],
+      [
+        "Matangnga",
+        "76.04.09.1001",
+        "0.57"
+      ]
+    ]
+  },
+  {
+    "provinsi": "Maluku Utara",
+    "desa_trans": "MURNI",
+    "desa_norm": "MURNI",
+    "top_candidates": [
+      [
+        "Gamsungi",
+        "82.01.08.2006",
+        "0.62"
+      ],
+      [
+        "Gamsungi",
+        "82.03.05.2004",
+        "0.62"
+      ],
+      [
+        "Gamsungi",
+        "82.03.22.2010",
+        "0.62"
+      ]
+    ]
+  }
+]

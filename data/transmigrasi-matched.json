@@ -1,0 +1,1160 @@
+[
+  {
+    "kdepum": "11.05.08.2005",
+    "nama_desa": "Alue Keumang",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Barat",
+    "kecamatan": "Pante Ceureumen",
+    "match_type": "fuzzy",
+    "similarity": 0.8461538461538461
+  },
+  {
+    "kdepum": "11.10.10.2006",
+    "nama_desa": "Gosong Telaga Barat",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Singkil",
+    "kecamatan": "Singkil Utara",
+    "match_type": "contains",
+    "similarity": 0.8125
+  },
+  {
+    "kdepum": "11.11.03.2042",
+    "nama_desa": "Cot Kruet",
+    "provinsi": "Aceh",
+    "kabupaten": "Bireuen",
+    "kecamatan": "Peudada",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.11.10.2041",
+    "nama_desa": "Alue Kuta",
+    "provinsi": "Aceh",
+    "kabupaten": "Bireuen",
+    "kecamatan": "Jangka",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.06.15.2005",
+    "nama_desa": "Data Cut",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Besar",
+    "kecamatan": "Kota Jantho",
+    "match_type": "contains",
+    "similarity": 1.0
+  },
+  {
+    "kdepum": "11.03.08.2011",
+    "nama_desa": "Alue Punti",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Timur",
+    "kecamatan": "Rantau Selamat",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.04.02.2019",
+    "nama_desa": "Jerata",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Tengah",
+    "kecamatan": "Silih Nara",
+    "match_type": "fuzzy",
+    "similarity": 0.8333333333333334
+  },
+  {
+    "kdepum": "11.02.09.2015",
+    "nama_desa": "Darussalam",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Tenggara",
+    "kecamatan": "Bukit Tusam",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.08.18.2018",
+    "nama_desa": "Langkahan",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Utara",
+    "kecamatan": "Langkahan",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.12.03.2031",
+    "nama_desa": "Pante Cermin",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Barat Daya",
+    "kecamatan": "Manggeng",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.09.06.2003",
+    "nama_desa": "Sigulai",
+    "provinsi": "Aceh",
+    "kabupaten": "Simeulue",
+    "kecamatan": "Simeulue Barat",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.15.02.2002",
+    "nama_desa": "Pante Ceureumen",
+    "provinsi": "Aceh",
+    "kabupaten": "Nagan Raya",
+    "kecamatan": "Seunagan",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.08.04.2075",
+    "nama_desa": "Buket Hagu",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Utara",
+    "kecamatan": "Lhoksukon",
+    "match_type": "fuzzy",
+    "similarity": 0.8571428571428571
+  },
+  {
+    "kdepum": "11.75.01.2001",
+    "nama_desa": "Subulussalam",
+    "provinsi": "Aceh",
+    "kabupaten": "Kota Subulussalam",
+    "kecamatan": "Simpang Kiri",
+    "match_type": "fuzzy",
+    "similarity": 0.9090909090909091
+  },
+  {
+    "kdepum": "11.03.02.2029",
+    "nama_desa": "Ujong Tunong",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Timur",
+    "kecamatan": "Julok",
+    "match_type": "fuzzy",
+    "similarity": 0.8148148148148148
+  },
+  {
+    "kdepum": "11.08.04.2075",
+    "nama_desa": "Buket Hagu",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Utara",
+    "kecamatan": "Lhoksukon",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.03.10.2015",
+    "nama_desa": "Punti Payong",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Timur",
+    "kecamatan": "Rantau Peureulak",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.13.07.2001",
+    "nama_desa": "Gumpang",
+    "provinsi": "Aceh",
+    "kabupaten": "Gayo Lues",
+    "kecamatan": "Puteri Betung",
+    "match_type": "fuzzy",
+    "similarity": 0.9333333333333333
+  },
+  {
+    "kdepum": "11.14.03.2004",
+    "nama_desa": "Gunong Meunasah",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Jaya",
+    "kecamatan": "Setia Bhakti",
+    "match_type": "fuzzy",
+    "similarity": 0.8666666666666667
+  },
+  {
+    "kdepum": "11.03.02.2029",
+    "nama_desa": "Ujong Tunong",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Timur",
+    "kecamatan": "Julok",
+    "match_type": "fuzzy",
+    "similarity": 0.7857142857142857
+  },
+  {
+    "kdepum": "11.07.16.2016",
+    "nama_desa": "Lampoh Lada",
+    "provinsi": "Aceh",
+    "kabupaten": "Pidie",
+    "kecamatan": "Pidie",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.01.09.2002",
+    "nama_desa": "Ujong Tanoh",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Selatan",
+    "kecamatan": "Trumon",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "11.13.05.2006",
+    "nama_desa": "Pintu Rime",
+    "provinsi": "Aceh",
+    "kabupaten": "Gayo Lues",
+    "kecamatan": "Pining",
+    "match_type": "fuzzy",
+    "similarity": 0.8
+  },
+  {
+    "kdepum": "11.06.15.2005",
+    "nama_desa": "Data Cut",
+    "provinsi": "Aceh",
+    "kabupaten": "Aceh Besar",
+    "kecamatan": "Kota Jantho",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "13.03.06.2008",
+    "nama_desa": "Padang Tarok",
+    "provinsi": "Sumatera Barat",
+    "kabupaten": "Sijunjung",
+    "kecamatan": "Kamang Baru",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "13.03.04.2009",
+    "nama_desa": "Sijunjung",
+    "provinsi": "Sumatera Barat",
+    "kabupaten": "Sijunjung",
+    "kecamatan": "Sijunjung",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "14.03.10.2007",
+    "nama_desa": "Makeruh",
+    "provinsi": "Riau",
+    "kabupaten": "Bengkalis",
+    "kecamatan": "Rupat",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "15.03.04.2010",
+    "nama_desa": "Sepintun",
+    "provinsi": "Jambi",
+    "kabupaten": "Sarolangun",
+    "kecamatan": "Pauh",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "16.06.05.2002",
+    "nama_desa": "Nganti",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Musi Banyuasin",
+    "kecamatan": "Sanga Desa",
+    "match_type": "fuzzy",
+    "similarity": 0.75
+  },
+  {
+    "kdepum": "16.07.20.2003",
+    "nama_desa": "Sri Agung",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Banyuasin",
+    "kecamatan": "Karang Agung Ilir",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "16.10.01.2012",
+    "nama_desa": "Tanabang Ulu",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Ogan Ilir",
+    "kecamatan": "Muara Kuang",
+    "match_type": "contains",
+    "similarity": 0.8
+  },
+  {
+    "kdepum": "16.08.07.2019",
+    "nama_desa": "Jati Sari",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Ogan Komering Ulu Timur",
+    "kecamatan": "Madang Suku I",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "16.12.02.2008",
+    "nama_desa": "Tempirai Selatan",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Penukal Abab Lematang Ilir",
+    "kecamatan": "Penukal Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "16.01.21.2010",
+    "nama_desa": "Keban Agung",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Ogan Komering Ulu",
+    "kecamatan": "Semidang Aji",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "16.02.11.2001",
+    "nama_desa": "Simpang Tiga",
+    "provinsi": "Sumatera Selatan",
+    "kabupaten": "Ogan Komering Ilir",
+    "kecamatan": "Tulung Selapan",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "17.02.07.2028",
+    "nama_desa": "Bukit Batu",
+    "provinsi": "Bengkulu",
+    "kabupaten": "Rejang Lebong",
+    "kecamatan": "Padang Ulak Tanding",
+    "match_type": "fuzzy",
+    "similarity": 0.8181818181818182
+  },
+  {
+    "kdepum": "17.04.06.2007",
+    "nama_desa": "Kedataran",
+    "provinsi": "Bengkulu",
+    "kabupaten": "Kaur",
+    "kecamatan": "Maje",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "17.03.01.2003",
+    "nama_desa": "Malakoni",
+    "provinsi": "Bengkulu",
+    "kabupaten": "Bengkulu Utara",
+    "kecamatan": "Enggano",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "19.05.03.2001",
+    "nama_desa": "Jebus",
+    "provinsi": "Kepulauan Bangka Belitung",
+    "kabupaten": "Bangka Barat",
+    "kecamatan": "Jebus",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "52.07.04.2003",
+    "nama_desa": "Tongo",
+    "provinsi": "Nusa Tenggara Barat",
+    "kabupaten": "Sumbawa Barat",
+    "kecamatan": "Sekongkang",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "53.11.14.2005",
+    "nama_desa": "Kota Kawau",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Sumba Timur",
+    "kecamatan": "Kahaungu Eti",
+    "match_type": "fuzzy",
+    "similarity": 0.8421052631578947
+  },
+  {
+    "kdepum": "53.05.02.2023",
+    "nama_desa": "Ala'ang",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Alor",
+    "kecamatan": "Alor Barat Laut",
+    "match_type": "fuzzy",
+    "similarity": 0.75
+  },
+  {
+    "kdepum": "53.14.11.2009",
+    "nama_desa": "Lidor",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Rote Ndao",
+    "kecamatan": "Loaholu",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "53.04.18.2002",
+    "nama_desa": "Loonuna",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Belu",
+    "kecamatan": "Lamaknen Selatan",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "53.18.06.2015",
+    "nama_desa": "Waimaringi",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Sumba Barat Daya",
+    "kecamatan": "Kodi Bangedo",
+    "match_type": "fuzzy",
+    "similarity": 0.8421052631578947
+  },
+  {
+    "kdepum": "53.21.08.2003",
+    "nama_desa": "Kapitan Meo",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Malaka",
+    "kecamatan": "Laenmanen",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "53.11.09.2004",
+    "nama_desa": "Kabaru",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Sumba Timur",
+    "kecamatan": "Rindi",
+    "match_type": "fuzzy",
+    "similarity": 0.7142857142857143
+  },
+  {
+    "kdepum": "53.14.05.2013",
+    "nama_desa": "Oenggae",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Rote Ndao",
+    "kecamatan": "Pantai Baru",
+    "match_type": "fuzzy",
+    "similarity": 0.7692307692307693
+  },
+  {
+    "kdepum": "53.11.14.2003",
+    "nama_desa": "Meurumba",
+    "provinsi": "Nusa Tenggara Timur",
+    "kabupaten": "Sumba Timur",
+    "kecamatan": "Kahaungu Eti",
+    "match_type": "contains",
+    "similarity": 0.7692307692307693
+  },
+  {
+    "kdepum": "61.11.01.2004",
+    "nama_desa": "Simpang Tiga",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kayong Utara",
+    "kecamatan": "Sukadana",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "61.02.15.2006",
+    "nama_desa": "Sungai Burung",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Mempawah",
+    "kecamatan": "Segedong",
+    "match_type": "fuzzy",
+    "similarity": 0.8888888888888888
+  },
+  {
+    "kdepum": "61.10.11.2009",
+    "nama_desa": "Keluas Hulu",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Melawi",
+    "kecamatan": "Tanah Pinoh Barat",
+    "match_type": "fuzzy",
+    "similarity": 0.75
+  },
+  {
+    "kdepum": "61.07.07.2008",
+    "nama_desa": "Semunying Jaya",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Bengkayang",
+    "kecamatan": "Jagoi Babang",
+    "match_type": "contains",
+    "similarity": 0.782608695652174
+  },
+  {
+    "kdepum": "61.11.04.2001",
+    "nama_desa": "Tanjungsatai",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kayong Utara",
+    "kecamatan": "Pulau Maya",
+    "match_type": "fuzzy",
+    "similarity": 0.9230769230769231
+  },
+  {
+    "kdepum": "61.11.04.2001",
+    "nama_desa": "Tanjungsatai",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kayong Utara",
+    "kecamatan": "Pulau Maya",
+    "match_type": "fuzzy",
+    "similarity": 0.96
+  },
+  {
+    "kdepum": "61.05.06.2007",
+    "nama_desa": "Nanga Bayan",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Sintang",
+    "kecamatan": "Ketungau Hulu",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "61.05.06.2013",
+    "nama_desa": "Sebetung Paluk",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Sintang",
+    "kecamatan": "Ketungau Hulu",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "61.06.18.2003",
+    "nama_desa": "Nanga Kalis",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kapuas Hulu",
+    "kecamatan": "Kalis",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "61.06.19.2002",
+    "nama_desa": "Boyan Tanjung",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kapuas Hulu",
+    "kecamatan": "Boyan Tanjung",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "61.06.03.2002",
+    "nama_desa": "Keliling Semulung",
+    "provinsi": "Kalimantan Barat",
+    "kabupaten": "Kapuas Hulu",
+    "kecamatan": "Embaloh Hilir",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "62.03.16.2001",
+    "nama_desa": "Dadahup",
+    "provinsi": "Kalimantan Tengah",
+    "kabupaten": "Kapuas",
+    "kecamatan": "Dadahup",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "62.09.07.2008",
+    "nama_desa": "Kahingai",
+    "provinsi": "Kalimantan Tengah",
+    "kabupaten": "Lamandau",
+    "kecamatan": "Belantikan Raya",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "63.10.09.2005",
+    "nama_desa": "Angsana",
+    "provinsi": "Kalimantan Selatan",
+    "kabupaten": "Tanah Bumbu",
+    "kecamatan": "Angsana",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "63.10.09.2005",
+    "nama_desa": "Angsana",
+    "provinsi": "Kalimantan Selatan",
+    "kabupaten": "Tanah Bumbu",
+    "kecamatan": "Angsana",
+    "match_type": "fuzzy",
+    "similarity": 0.9333333333333333
+  },
+  {
+    "kdepum": "64.71.03.1001",
+    "nama_desa": "Batu Ampar",
+    "provinsi": "Kalimantan Timur",
+    "kabupaten": "Kota Balikpapan",
+    "kecamatan": "Balikpapan Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "64.08.09.2004",
+    "nama_desa": "Tepian Langsat",
+    "provinsi": "Kalimantan Timur",
+    "kabupaten": "Kutai Timur",
+    "kecamatan": "Bengalon",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "64.01.02.2004",
+    "nama_desa": "Keladen",
+    "provinsi": "Kalimantan Timur",
+    "kabupaten": "Paser",
+    "kecamatan": "Tanjung Harapan",
+    "match_type": "fuzzy",
+    "similarity": 0.9230769230769231
+  },
+  {
+    "kdepum": "64.01.02.2004",
+    "nama_desa": "Keladen",
+    "provinsi": "Kalimantan Timur",
+    "kabupaten": "Paser",
+    "kecamatan": "Tanjung Harapan",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "65.01.06.2003",
+    "nama_desa": "Tanjung Buka",
+    "provinsi": "Kalimantan Utara",
+    "kabupaten": "Bulungan",
+    "kecamatan": "Tanjung Palas Tengah",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "65.04.03.2003",
+    "nama_desa": "Sambungan",
+    "provinsi": "Kalimantan Utara",
+    "kabupaten": "Tana Tidung",
+    "kecamatan": "Tana Lia",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "71.10.06.2002",
+    "nama_desa": "Motongkad",
+    "provinsi": "Sulawesi Utara",
+    "kabupaten": "Bolaang Mongondow Timur",
+    "kecamatan": "Motongkad",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "71.07.12.2001",
+    "nama_desa": "Wioi",
+    "provinsi": "Sulawesi Utara",
+    "kabupaten": "Minahasa Tenggara",
+    "kecamatan": "Ratahan Timur",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.02.08.2005",
+    "nama_desa": "Torire",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Poso",
+    "kecamatan": "Lore Tengah",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.07.05.2006",
+    "nama_desa": "Kindandal",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Banggai Kepulauan",
+    "kecamatan": "Liang",
+    "match_type": "fuzzy",
+    "similarity": 0.9411764705882353
+  },
+  {
+    "kdepum": "72.07.06.2022",
+    "nama_desa": "Oluno",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Banggai Kepulauan",
+    "kecamatan": "Bulagi",
+    "match_type": "fuzzy",
+    "similarity": 0.7142857142857143
+  },
+  {
+    "kdepum": "72.02.05.2012",
+    "nama_desa": "Kancuu",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Poso",
+    "kecamatan": "Pamona Timur",
+    "match_type": "contains",
+    "similarity": 1.0
+  },
+  {
+    "kdepum": "72.04.05.2009",
+    "nama_desa": "Kabetan",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Toli Toli",
+    "kecamatan": "Ogodeide",
+    "match_type": "fuzzy",
+    "similarity": 0.7692307692307693
+  },
+  {
+    "kdepum": "72.11.04.2012",
+    "nama_desa": "Dungkean",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Banggai Laut",
+    "kecamatan": "Bangkurung",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.06.08.2001",
+    "nama_desa": "Bahoea Reko-Reko",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Morowali",
+    "kecamatan": "Bungku Barat",
+    "match_type": "contains",
+    "similarity": 0.5714285714285714
+  },
+  {
+    "kdepum": "72.04.06.2001",
+    "nama_desa": "Janja",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Toli Toli",
+    "kecamatan": "Lampasio",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.07.05.2001",
+    "nama_desa": "Tangkop",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Banggai Kepulauan",
+    "kecamatan": "Liang",
+    "match_type": "fuzzy",
+    "similarity": 0.8
+  },
+  {
+    "kdepum": "72.10.01.2007",
+    "nama_desa": "Sidera",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Sigi",
+    "kecamatan": "Sigi Biromaru",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.10.02.2017",
+    "nama_desa": "Lembantongoa",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Sigi",
+    "kecamatan": "Palolo",
+    "match_type": "fuzzy",
+    "similarity": 0.88
+  },
+  {
+    "kdepum": "72.12.08.2022",
+    "nama_desa": "Tokala Atas",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Morowali Utara",
+    "kecamatan": "Bungku Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "72.12.08.2022",
+    "nama_desa": "Tokala Atas",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Morowali Utara",
+    "kecamatan": "Bungku Utara",
+    "match_type": "contains",
+    "similarity": 0.7058823529411765
+  },
+  {
+    "kdepum": "72.10.06.2010",
+    "nama_desa": "Moa",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Sigi",
+    "kecamatan": "Kulawi Selatan",
+    "match_type": "fuzzy",
+    "similarity": 0.75
+  },
+  {
+    "kdepum": "72.06.08.2004",
+    "nama_desa": "Umpanga",
+    "provinsi": "Sulawesi Tengah",
+    "kabupaten": "Morowali",
+    "kecamatan": "Bungku Barat",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "73.14.11.2009",
+    "nama_desa": "Lagading",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Sidenreng Rappang",
+    "kecamatan": "Pitu Riase",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "73.24.03.2002",
+    "nama_desa": "Mahalona",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Luwu Timur",
+    "kecamatan": "Towuti",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "73.17.03.1003",
+    "nama_desa": "Suli",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Luwu",
+    "kecamatan": "Suli",
+    "match_type": "fuzzy",
+    "similarity": 0.75
+  },
+  {
+    "kdepum": "73.22.04.2009",
+    "nama_desa": "Bakka",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Luwu Utara",
+    "kecamatan": "Sabbang",
+    "match_type": "fuzzy",
+    "similarity": 0.7272727272727273
+  },
+  {
+    "kdepum": "73.14.07.1004",
+    "nama_desa": "Wala",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Sidenreng Rappang",
+    "kecamatan": "Maritengngae",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "73.22.03.2009",
+    "nama_desa": "Lantang Tallang",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Luwu Utara",
+    "kecamatan": "Masamba",
+    "match_type": "fuzzy",
+    "similarity": 0.9655172413793104
+  },
+  {
+    "kdepum": "73.02.07.1001",
+    "nama_desa": "Tanete",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Bulukumba",
+    "kecamatan": "Bulukumpa",
+    "match_type": "fuzzy",
+    "similarity": 0.7142857142857143
+  },
+  {
+    "kdepum": "73.12.01.2004",
+    "nama_desa": "Watu",
+    "provinsi": "Sulawesi Selatan",
+    "kabupaten": "Soppeng",
+    "kecamatan": "Marioriwawo",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.09.08.2008",
+    "nama_desa": "Puuhialu",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe Utara",
+    "kecamatan": "Oheo",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.09.08.2008",
+    "nama_desa": "Puuhialu",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe Utara",
+    "kecamatan": "Oheo",
+    "match_type": "fuzzy",
+    "similarity": 0.9411764705882353
+  },
+  {
+    "kdepum": "74.03.07.2003",
+    "nama_desa": "Raimuna",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Muna",
+    "kecamatan": "Maligano",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.01.14.1002",
+    "nama_desa": "Kolakaasi",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Kolaka",
+    "kecamatan": "Latambaga",
+    "match_type": "contains",
+    "similarity": 0.8
+  },
+  {
+    "kdepum": "74.05.09.2014",
+    "nama_desa": "Roda",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe Selatan",
+    "kecamatan": "Kolono",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.01.24.2004",
+    "nama_desa": "Anawua",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Kolaka",
+    "kecamatan": "Toari",
+    "match_type": "fuzzy",
+    "similarity": 0.8333333333333334
+  },
+  {
+    "kdepum": "74.06.18.2005",
+    "nama_desa": "Lampata",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Bombana",
+    "kecamatan": "Rumbia Tengah",
+    "match_type": "fuzzy",
+    "similarity": 0.7058823529411765
+  },
+  {
+    "kdepum": "74.02.23.2003",
+    "nama_desa": "Parudongka",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe",
+    "kecamatan": "Routa",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.13.07.2007",
+    "nama_desa": "Lakabu",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Muna Barat",
+    "kecamatan": "Tiworo Tengah",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.13.07.2006",
+    "nama_desa": "Momuntu",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Muna Barat",
+    "kecamatan": "Tiworo Tengah",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.02.28.2004",
+    "nama_desa": "Watulawu",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe",
+    "kecamatan": "Amonggedo",
+    "match_type": "fuzzy",
+    "similarity": 0.7777777777777778
+  },
+  {
+    "kdepum": "74.05.19.2009",
+    "nama_desa": "Laeya",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe Selatan",
+    "kecamatan": "Laeya",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.02.15.1001",
+    "nama_desa": "Tongauna",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe",
+    "kecamatan": "Tongauna",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.09.02.2002",
+    "nama_desa": "Padalere",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Konawe Utara",
+    "kecamatan": "Wiwirano",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "74.03.07.2007",
+    "nama_desa": "Pohorua",
+    "provinsi": "Sulawesi Tenggara",
+    "kabupaten": "Muna",
+    "kecamatan": "Maligano",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "75.02.07.2002",
+    "nama_desa": "Lito",
+    "provinsi": "Gorontalo",
+    "kabupaten": "Boalemo",
+    "kecamatan": "Paguyaman Pantai",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "75.01.16.2011",
+    "nama_desa": "Bukit Aren",
+    "provinsi": "Gorontalo",
+    "kabupaten": "Gorontalo",
+    "kecamatan": "Pulubala",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "75.05.11.2009",
+    "nama_desa": "Motihelumo",
+    "provinsi": "Gorontalo",
+    "kabupaten": "Gorontalo Utara",
+    "kecamatan": "Sumalata Timur",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "75.01.16.2010",
+    "nama_desa": "Ayumolingo",
+    "provinsi": "Gorontalo",
+    "kabupaten": "Gorontalo",
+    "kecamatan": "Pulubala",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "75.02.02.2006",
+    "nama_desa": "Pangeya",
+    "provinsi": "Gorontalo",
+    "kabupaten": "Boalemo",
+    "kecamatan": "Wonosari",
+    "match_type": "fuzzy",
+    "similarity": 0.9230769230769231
+  },
+  {
+    "kdepum": "76.03.15.2001",
+    "nama_desa": "Salumokanan",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Mamasa",
+    "kecamatan": "Rantebulahan Timur",
+    "match_type": "fuzzy",
+    "similarity": 0.7619047619047619
+  },
+  {
+    "kdepum": "76.03.05.2005",
+    "nama_desa": "Saluleang",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Mamasa",
+    "kecamatan": "Tabulahan",
+    "match_type": "fuzzy",
+    "similarity": 0.8421052631578947
+  },
+  {
+    "kdepum": "76.03.09.2013",
+    "nama_desa": "Salurano",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Mamasa",
+    "kecamatan": "Tanduk Kalua",
+    "match_type": "contains",
+    "similarity": 0.6666666666666666
+  },
+  {
+    "kdepum": "76.04.05.2006",
+    "nama_desa": "Piriang Tapiko",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Polewali Mandar",
+    "kecamatan": "Tutar",
+    "match_type": "fuzzy",
+    "similarity": 0.9629629629629629
+  },
+  {
+    "kdepum": "76.02.03.1001",
+    "nama_desa": "Sinyonyoi",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Mamuju",
+    "kecamatan": "Kalukku",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "76.05.05.2004",
+    "nama_desa": "Ulumanda",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Majene",
+    "kecamatan": "Ulumanda",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "76.04.12.2011",
+    "nama_desa": "Pallis",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Polewali Mandar",
+    "kecamatan": "Balanipa",
+    "match_type": "fuzzy",
+    "similarity": 0.7142857142857143
+  },
+  {
+    "kdepum": "76.04.05.2004",
+    "nama_desa": "Ratte",
+    "provinsi": "Sulawesi Barat",
+    "kabupaten": "Polewali Mandar",
+    "kecamatan": "Tutar",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "81.05.12.2003",
+    "nama_desa": "Waematakabo",
+    "provinsi": "Maluku",
+    "kabupaten": "Seram Bagian Timur",
+    "kecamatan": "Bula Barat",
+    "match_type": "fuzzy",
+    "similarity": 0.8181818181818182
+  },
+  {
+    "kdepum": "81.01.25.2002",
+    "nama_desa": "Sariputih",
+    "provinsi": "Maluku",
+    "kabupaten": "Maluku Tengah",
+    "kecamatan": "Seram Utara Timur Kobi",
+    "match_type": "fuzzy",
+    "similarity": 0.9473684210526315
+  },
+  {
+    "kdepum": "82.02.04.2004",
+    "nama_desa": "Waleh",
+    "provinsi": "Maluku Utara",
+    "kabupaten": "Halmahera Tengah",
+    "kecamatan": "Weda Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "82.05.13.2003",
+    "nama_desa": "Modapuhi",
+    "provinsi": "Maluku Utara",
+    "kabupaten": "Kepulauan Sula",
+    "kecamatan": "Mangoli Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "82.06.01.2006",
+    "nama_desa": "Subaim",
+    "provinsi": "Maluku Utara",
+    "kabupaten": "Halmahera Timur",
+    "kecamatan": "Wasile",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "82.06.09.2003",
+    "nama_desa": "Patlean",
+    "provinsi": "Maluku Utara",
+    "kabupaten": "Halmahera Timur",
+    "kecamatan": "Maba Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "91.11.03.2002",
+    "nama_desa": "Senggi",
+    "provinsi": "Papua",
+    "kabupaten": "Keerom",
+    "kecamatan": "Senggi",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.03.17.2004",
+    "nama_desa": "Tomage",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Fak Fak",
+    "kecamatan": "Tomage",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.02.05.2018",
+    "nama_desa": "Aurmios",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Manokwari",
+    "kecamatan": "Masni",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.02.14.2006",
+    "nama_desa": "Meyes",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Manokwari",
+    "kecamatan": "Manokwari Utara",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.11.05.2001",
+    "nama_desa": "Dembek",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Manokwari Selatan",
+    "kecamatan": "Momi Waren",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.07.12.2003",
+    "nama_desa": "Werianggi",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Teluk Wondama",
+    "kecamatan": "Nikiwar",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "92.01.01.2017",
+    "nama_desa": "Mibi",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Sorong",
+    "kecamatan": "Makbon",
+    "match_type": "fuzzy",
+    "similarity": 0.7272727272727273
+  },
+  {
+    "kdepum": "92.10.03.2005",
+    "nama_desa": "Aitrem",
+    "provinsi": "Papua Barat",
+    "kabupaten": "Maybrat",
+    "kecamatan": "Aifat Timur",
+    "match_type": "exact"
+  },
+  {
+    "kdepum": "91.01.02.2001",
+    "nama_desa": "Muting",
+    "provinsi": "Papua Selatan",
+    "kabupaten": "Merauke",
+    "kecamatan": "Muting",
+    "match_type": "exact"
+  }
+]

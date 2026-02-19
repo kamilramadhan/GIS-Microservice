@@ -1,0 +1,1562 @@
+{
+  "exact_match": [
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "COT KRUET",
+      "desa_shp": "Cot Kruet",
+      "kdepum": "11.11.03.2042",
+      "kabupaten": "Bireuen",
+      "kecamatan": "Peudada"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "ALUE KUTA",
+      "desa_shp": "Alue Kuta",
+      "kdepum": "11.11.10.2041",
+      "kabupaten": "Bireuen",
+      "kecamatan": "Jangka"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "ALUE PUNTI",
+      "desa_shp": "Alue Punti",
+      "kdepum": "11.03.08.2011",
+      "kabupaten": "Aceh Timur",
+      "kecamatan": "Rantau Selamat"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "DARUSSALAM",
+      "desa_shp": "Darussalam",
+      "kdepum": "11.02.09.2015",
+      "kabupaten": "Aceh Tenggara",
+      "kecamatan": "Bukit Tusam"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "LANGKAHAN",
+      "desa_shp": "Langkahan",
+      "kdepum": "11.08.18.2018",
+      "kabupaten": "Aceh Utara",
+      "kecamatan": "Langkahan"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "PANTE CERMIN",
+      "desa_shp": "Pante Cermin",
+      "kdepum": "11.12.03.2031",
+      "kabupaten": "Aceh Barat Daya",
+      "kecamatan": "Manggeng"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "SIGULAI",
+      "desa_shp": "Sigulai",
+      "kdepum": "11.09.06.2003",
+      "kabupaten": "Simeulue",
+      "kecamatan": "Simeulue Barat"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "PANTE CEUREUMEN",
+      "desa_shp": "Pante Ceureumen",
+      "kdepum": "11.15.02.2002",
+      "kabupaten": "Nagan Raya",
+      "kecamatan": "Seunagan"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "BUKET HAGU",
+      "desa_shp": "Buket Hagu",
+      "kdepum": "11.08.04.2075",
+      "kabupaten": "Aceh Utara",
+      "kecamatan": "Lhoksukon"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "PUNTI PAYONG",
+      "desa_shp": "Punti Payong",
+      "kdepum": "11.03.10.2015",
+      "kabupaten": "Aceh Timur",
+      "kecamatan": "Rantau Peureulak"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "LAMPOH LADA",
+      "desa_shp": "Lampoh Lada",
+      "kdepum": "11.07.16.2016",
+      "kabupaten": "Pidie",
+      "kecamatan": "Pidie"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "UJONG TANOH",
+      "desa_shp": "Ujong Tanoh",
+      "kdepum": "11.01.09.2002",
+      "kabupaten": "Aceh Selatan",
+      "kecamatan": "Trumon"
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "DATA CUT",
+      "desa_shp": "Data Cut",
+      "kdepum": "11.06.15.2005",
+      "kabupaten": "Aceh Besar",
+      "kecamatan": "Kota Jantho"
+    },
+    {
+      "provinsi": "Sumatera Barat",
+      "desa_trans": "PADANG TAROK",
+      "desa_shp": "Padang Tarok",
+      "kdepum": "13.03.06.2008",
+      "kabupaten": "Sijunjung",
+      "kecamatan": "Kamang Baru"
+    },
+    {
+      "provinsi": "Sumatera Barat",
+      "desa_trans": "SIJUNJUNG",
+      "desa_shp": "Sijunjung",
+      "kdepum": "13.03.04.2009",
+      "kabupaten": "Sijunjung",
+      "kecamatan": "Sijunjung"
+    },
+    {
+      "provinsi": "Riau",
+      "desa_trans": "MAKERUH",
+      "desa_shp": "Makeruh",
+      "kdepum": "14.03.10.2007",
+      "kabupaten": "Bengkalis",
+      "kecamatan": "Rupat"
+    },
+    {
+      "provinsi": "Jambi",
+      "desa_trans": "SEPINTUN",
+      "desa_shp": "Sepintun",
+      "kdepum": "15.03.04.2010",
+      "kabupaten": "Sarolangun",
+      "kecamatan": "Pauh"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "SRI AGUNG",
+      "desa_shp": "Sri Agung",
+      "kdepum": "16.07.20.2003",
+      "kabupaten": "Banyuasin",
+      "kecamatan": "Karang Agung Ilir"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "JATI SARI",
+      "desa_shp": "Jati Sari",
+      "kdepum": "16.08.07.2019",
+      "kabupaten": "Ogan Komering Ulu Timur",
+      "kecamatan": "Madang Suku I"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "TEMPIRAI SELATAN",
+      "desa_shp": "Tempirai Selatan",
+      "kdepum": "16.12.02.2008",
+      "kabupaten": "Penukal Abab Lematang Ilir",
+      "kecamatan": "Penukal Utara"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "KEBAN AGUNG",
+      "desa_shp": "Keban Agung",
+      "kdepum": "16.01.21.2010",
+      "kabupaten": "Ogan Komering Ulu",
+      "kecamatan": "Semidang Aji"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "SIMPANG TIGA",
+      "desa_shp": "Simpang Tiga",
+      "kdepum": "16.02.11.2001",
+      "kabupaten": "Ogan Komering Ilir",
+      "kecamatan": "Tulung Selapan"
+    },
+    {
+      "provinsi": "Bengkulu",
+      "desa_trans": "KEDATARAN",
+      "desa_shp": "Kedataran",
+      "kdepum": "17.04.06.2007",
+      "kabupaten": "Kaur",
+      "kecamatan": "Maje"
+    },
+    {
+      "provinsi": "Bengkulu",
+      "desa_trans": "MALAKONI",
+      "desa_shp": "Malakoni",
+      "kdepum": "17.03.01.2003",
+      "kabupaten": "Bengkulu Utara",
+      "kecamatan": "Enggano"
+    },
+    {
+      "provinsi": "Kepulauan Bangka Belitung",
+      "desa_trans": "JEBUS",
+      "desa_shp": "Jebus",
+      "kdepum": "19.05.03.2001",
+      "kabupaten": "Bangka Barat",
+      "kecamatan": "Jebus"
+    },
+    {
+      "provinsi": "Nusa Tenggara Barat",
+      "desa_trans": "TONGO",
+      "desa_shp": "Tongo",
+      "kdepum": "52.07.04.2003",
+      "kabupaten": "Sumbawa Barat",
+      "kecamatan": "Sekongkang"
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "LIDOR",
+      "desa_shp": "Lidor",
+      "kdepum": "53.14.11.2009",
+      "kabupaten": "Rote Ndao",
+      "kecamatan": "Loaholu"
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "LOONUNA",
+      "desa_shp": "Loonuna",
+      "kdepum": "53.04.18.2002",
+      "kabupaten": "Belu",
+      "kecamatan": "Lamaknen Selatan"
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "KAPITAN MEO",
+      "desa_shp": "Kapitan Meo",
+      "kdepum": "53.21.08.2003",
+      "kabupaten": "Malaka",
+      "kecamatan": "Laenmanen"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "SIMPANG TIGA",
+      "desa_shp": "Simpang Tiga",
+      "kdepum": "61.11.01.2004",
+      "kabupaten": "Kayong Utara",
+      "kecamatan": "Sukadana"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "NANGA BAYAN",
+      "desa_shp": "Nanga Bayan",
+      "kdepum": "61.05.06.2007",
+      "kabupaten": "Sintang",
+      "kecamatan": "Ketungau Hulu"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "SEBETUNG PALUK",
+      "desa_shp": "Sebetung Paluk",
+      "kdepum": "61.05.06.2013",
+      "kabupaten": "Sintang",
+      "kecamatan": "Ketungau Hulu"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "NANGA KALIS",
+      "desa_shp": "Nanga Kalis",
+      "kdepum": "61.06.18.2003",
+      "kabupaten": "Kapuas Hulu",
+      "kecamatan": "Kalis"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "BOYAN TANJUNG",
+      "desa_shp": "Boyan Tanjung",
+      "kdepum": "61.06.19.2002",
+      "kabupaten": "Kapuas Hulu",
+      "kecamatan": "Boyan Tanjung"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "KELILING SEMULUNG",
+      "desa_shp": "Keliling Semulung",
+      "kdepum": "61.06.03.2002",
+      "kabupaten": "Kapuas Hulu",
+      "kecamatan": "Embaloh Hilir"
+    },
+    {
+      "provinsi": "Kalimantan Tengah",
+      "desa_trans": "DADAHUP",
+      "desa_shp": "Dadahup",
+      "kdepum": "62.03.16.2001",
+      "kabupaten": "Kapuas",
+      "kecamatan": "Dadahup"
+    },
+    {
+      "provinsi": "Kalimantan Tengah",
+      "desa_trans": "KAHINGAI",
+      "desa_shp": "Kahingai",
+      "kdepum": "62.09.07.2008",
+      "kabupaten": "Lamandau",
+      "kecamatan": "Belantikan Raya"
+    },
+    {
+      "provinsi": "Kalimantan Selatan",
+      "desa_trans": "ANGSANA",
+      "desa_shp": "Angsana",
+      "kdepum": "63.10.09.2005",
+      "kabupaten": "Tanah Bumbu",
+      "kecamatan": "Angsana"
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "desa_trans": "BATU AMPAR",
+      "desa_shp": "Batu Ampar",
+      "kdepum": "64.71.03.1001",
+      "kabupaten": "Kota Balikpapan",
+      "kecamatan": "Balikpapan Utara"
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "desa_trans": "TEPIAN LANGSAT",
+      "desa_shp": "Tepian Langsat",
+      "kdepum": "64.08.09.2004",
+      "kabupaten": "Kutai Timur",
+      "kecamatan": "Bengalon"
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "desa_trans": "KELADEN",
+      "desa_shp": "Keladen",
+      "kdepum": "64.01.02.2004",
+      "kabupaten": "Paser",
+      "kecamatan": "Tanjung Harapan"
+    },
+    {
+      "provinsi": "Kalimantan Utara",
+      "desa_trans": "TANJUNG BUKA",
+      "desa_shp": "Tanjung Buka",
+      "kdepum": "65.01.06.2003",
+      "kabupaten": "Bulungan",
+      "kecamatan": "Tanjung Palas Tengah"
+    },
+    {
+      "provinsi": "Kalimantan Utara",
+      "desa_trans": "SAMBUNGAN",
+      "desa_shp": "Sambungan",
+      "kdepum": "65.04.03.2003",
+      "kabupaten": "Tana Tidung",
+      "kecamatan": "Tana Lia"
+    },
+    {
+      "provinsi": "Sulawesi Utara",
+      "desa_trans": "MOTONGKAD",
+      "desa_shp": "Motongkad",
+      "kdepum": "71.10.06.2002",
+      "kabupaten": "Bolaang Mongondow Timur",
+      "kecamatan": "Motongkad"
+    },
+    {
+      "provinsi": "Sulawesi Utara",
+      "desa_trans": "WIOI",
+      "desa_shp": "Wioi",
+      "kdepum": "71.07.12.2001",
+      "kabupaten": "Minahasa Tenggara",
+      "kecamatan": "Ratahan Timur"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "TORIRE",
+      "desa_shp": "Torire",
+      "kdepum": "72.02.08.2005",
+      "kabupaten": "Poso",
+      "kecamatan": "Lore Tengah"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "DUNGKEAN",
+      "desa_shp": "Dungkean",
+      "kdepum": "72.11.04.2012",
+      "kabupaten": "Banggai Laut",
+      "kecamatan": "Bangkurung"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "JANJA",
+      "desa_shp": "Janja",
+      "kdepum": "72.04.06.2001",
+      "kabupaten": "Toli Toli",
+      "kecamatan": "Lampasio"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "SIDERA",
+      "desa_shp": "Sidera",
+      "kdepum": "72.10.01.2007",
+      "kabupaten": "Sigi",
+      "kecamatan": "Sigi Biromaru"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "TOKALA ATAS",
+      "desa_shp": "Tokala Atas",
+      "kdepum": "72.12.08.2022",
+      "kabupaten": "Morowali Utara",
+      "kecamatan": "Bungku Utara"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "UMPANGA",
+      "desa_shp": "Umpanga",
+      "kdepum": "72.06.08.2004",
+      "kabupaten": "Morowali",
+      "kecamatan": "Bungku Barat"
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "LAGADING",
+      "desa_shp": "Lagading",
+      "kdepum": "73.14.11.2009",
+      "kabupaten": "Sidenreng Rappang",
+      "kecamatan": "Pitu Riase"
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "MAHALONA",
+      "desa_shp": "Mahalona",
+      "kdepum": "73.24.03.2002",
+      "kabupaten": "Luwu Timur",
+      "kecamatan": "Towuti"
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "WALA",
+      "desa_shp": "Wala",
+      "kdepum": "73.14.07.1004",
+      "kabupaten": "Sidenreng Rappang",
+      "kecamatan": "Maritengngae"
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "WATU",
+      "desa_shp": "Watu",
+      "kdepum": "73.12.01.2004",
+      "kabupaten": "Soppeng",
+      "kecamatan": "Marioriwawo"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "PUUHIALU",
+      "desa_shp": "Puuhialu",
+      "kdepum": "74.09.08.2008",
+      "kabupaten": "Konawe Utara",
+      "kecamatan": "Oheo"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "RAIMUNA",
+      "desa_shp": "Raimuna",
+      "kdepum": "74.03.07.2003",
+      "kabupaten": "Muna",
+      "kecamatan": "Maligano"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "RODA",
+      "desa_shp": "Roda",
+      "kdepum": "74.05.09.2014",
+      "kabupaten": "Konawe Selatan",
+      "kecamatan": "Kolono"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "PARUDONGKA",
+      "desa_shp": "Parudongka",
+      "kdepum": "74.02.23.2003",
+      "kabupaten": "Konawe",
+      "kecamatan": "Routa"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "LAKABU",
+      "desa_shp": "Lakabu",
+      "kdepum": "74.13.07.2007",
+      "kabupaten": "Muna Barat",
+      "kecamatan": "Tiworo Tengah"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "MOMUNTU",
+      "desa_shp": "Momuntu",
+      "kdepum": "74.13.07.2006",
+      "kabupaten": "Muna Barat",
+      "kecamatan": "Tiworo Tengah"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "LAEYA",
+      "desa_shp": "Laeya",
+      "kdepum": "74.05.19.2009",
+      "kabupaten": "Konawe Selatan",
+      "kecamatan": "Laeya"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "TONGAUNA",
+      "desa_shp": "Tongauna",
+      "kdepum": "74.02.15.1001",
+      "kabupaten": "Konawe",
+      "kecamatan": "Tongauna"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "PADALERE",
+      "desa_shp": "Padalere",
+      "kdepum": "74.09.02.2002",
+      "kabupaten": "Konawe Utara",
+      "kecamatan": "Wiwirano"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "POHORUA",
+      "desa_shp": "Pohorua",
+      "kdepum": "74.03.07.2007",
+      "kabupaten": "Muna",
+      "kecamatan": "Maligano"
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "LITO",
+      "desa_shp": "Lito",
+      "kdepum": "75.02.07.2002",
+      "kabupaten": "Boalemo",
+      "kecamatan": "Paguyaman Pantai"
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "BUKIT AREN",
+      "desa_shp": "Bukit Aren",
+      "kdepum": "75.01.16.2011",
+      "kabupaten": "Gorontalo",
+      "kecamatan": "Pulubala"
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "MOTIHELUMO",
+      "desa_shp": "Motihelumo",
+      "kdepum": "75.05.11.2009",
+      "kabupaten": "Gorontalo Utara",
+      "kecamatan": "Sumalata Timur"
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "AYUMOLINGO",
+      "desa_shp": "Ayumolingo",
+      "kdepum": "75.01.16.2010",
+      "kabupaten": "Gorontalo",
+      "kecamatan": "Pulubala"
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "SINYONYOI",
+      "desa_shp": "Sinyonyoi",
+      "kdepum": "76.02.03.1001",
+      "kabupaten": "Mamuju",
+      "kecamatan": "Kalukku"
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "ULUMANDA",
+      "desa_shp": "Ulumanda",
+      "kdepum": "76.05.05.2004",
+      "kabupaten": "Majene",
+      "kecamatan": "Ulumanda"
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "RATTE",
+      "desa_shp": "Ratte",
+      "kdepum": "76.04.05.2004",
+      "kabupaten": "Polewali Mandar",
+      "kecamatan": "Tutar"
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "desa_trans": "WALEH",
+      "desa_shp": "Waleh",
+      "kdepum": "82.02.04.2004",
+      "kabupaten": "Halmahera Tengah",
+      "kecamatan": "Weda Utara"
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "desa_trans": "MODAPUHI",
+      "desa_shp": "Modapuhi",
+      "kdepum": "82.05.13.2003",
+      "kabupaten": "Kepulauan Sula",
+      "kecamatan": "Mangoli Utara"
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "desa_trans": "SUBAIM",
+      "desa_shp": "Subaim",
+      "kdepum": "82.06.01.2006",
+      "kabupaten": "Halmahera Timur",
+      "kecamatan": "Wasile"
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "desa_trans": "PATLEAN",
+      "desa_shp": "Patlean",
+      "kdepum": "82.06.09.2003",
+      "kabupaten": "Halmahera Timur",
+      "kecamatan": "Maba Utara"
+    },
+    {
+      "provinsi": "Papua",
+      "desa_trans": "SENGGI",
+      "desa_shp": "Senggi",
+      "kdepum": "91.11.03.2002",
+      "kabupaten": "Keerom",
+      "kecamatan": "Senggi"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "TOMAGE",
+      "desa_shp": "Tomage",
+      "kdepum": "92.03.17.2004",
+      "kabupaten": "Fak Fak",
+      "kecamatan": "Tomage"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "AURMIOS",
+      "desa_shp": "Aurmios",
+      "kdepum": "92.02.05.2018",
+      "kabupaten": "Manokwari",
+      "kecamatan": "Masni"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "MEYES",
+      "desa_shp": "Meyes",
+      "kdepum": "92.02.14.2006",
+      "kabupaten": "Manokwari",
+      "kecamatan": "Manokwari Utara"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "DEMBEK",
+      "desa_shp": "Dembek",
+      "kdepum": "92.11.05.2001",
+      "kabupaten": "Manokwari Selatan",
+      "kecamatan": "Momi Waren"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "WERIANGGI",
+      "desa_shp": "Werianggi",
+      "kdepum": "92.07.12.2003",
+      "kabupaten": "Teluk Wondama",
+      "kecamatan": "Nikiwar"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "AITREM",
+      "desa_shp": "Aitrem",
+      "kdepum": "92.10.03.2005",
+      "kabupaten": "Maybrat",
+      "kecamatan": "Aifat Timur"
+    },
+    {
+      "provinsi": "Papua Selatan",
+      "desa_trans": "MUTING",
+      "desa_shp": "Muting",
+      "kdepum": "91.01.02.2001",
+      "kabupaten": "Merauke",
+      "kecamatan": "Muting"
+    }
+  ],
+  "fuzzy_match": [
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "ALUE KEUMUNENG",
+      "desa_shp": "Alue Keumang",
+      "kdepum": "11.05.08.2005",
+      "kabupaten": "Aceh Barat",
+      "kecamatan": "Pante Ceureumen",
+      "similarity": 0.8461538461538461
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "GOSONG TELAGA",
+      "desa_shp": "Gosong Telaga Barat",
+      "kdepum": "11.10.10.2006",
+      "kabupaten": "Aceh Singkil",
+      "kecamatan": "Singkil Utara",
+      "similarity": 0.8125
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "GAMPONG DATA CUT",
+      "desa_shp": "Data Cut",
+      "kdepum": "11.06.15.2005",
+      "kabupaten": "Aceh Besar",
+      "kecamatan": "Kota Jantho",
+      "similarity": 1.0
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "BERATA",
+      "desa_shp": "Jerata",
+      "kdepum": "11.04.02.2019",
+      "kabupaten": "Aceh Tengah",
+      "kecamatan": "Silih Nara",
+      "similarity": 0.8333333333333334
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "BUKIT HANGU",
+      "desa_shp": "Buket Hagu",
+      "kdepum": "11.08.04.2075",
+      "kabupaten": "Aceh Utara",
+      "kecamatan": "Lhoksukon",
+      "similarity": 0.8571428571428571
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "SUBUSSALAM",
+      "desa_shp": "Subulussalam",
+      "kdepum": "11.75.01.2001",
+      "kabupaten": "Kota Subulussalam",
+      "kecamatan": "Simpang Kiri",
+      "similarity": 0.9090909090909091
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "KETUBONG TUNONG",
+      "desa_shp": "Ujong Tunong",
+      "kdepum": "11.03.02.2029",
+      "kabupaten": "Aceh Timur",
+      "kecamatan": "Julok",
+      "similarity": 0.8148148148148148
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "GEUMPANG",
+      "desa_shp": "Gumpang",
+      "kdepum": "11.13.07.2001",
+      "kabupaten": "Gayo Lues",
+      "kecamatan": "Puteri Betung",
+      "similarity": 0.9333333333333333
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "GUNONG MEUSANAH",
+      "desa_shp": "Gunong Meunasah",
+      "kdepum": "11.14.03.2004",
+      "kabupaten": "Aceh Jaya",
+      "kecamatan": "Setia Bhakti",
+      "similarity": 0.8666666666666667
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "KEUTUBONG TUNONG",
+      "desa_shp": "Ujong Tunong",
+      "kdepum": "11.03.02.2029",
+      "kabupaten": "Aceh Timur",
+      "kecamatan": "Julok",
+      "similarity": 0.7857142857142857
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "PINTU RIME GAYO",
+      "desa_shp": "Pintu Rime",
+      "kdepum": "11.13.05.2006",
+      "kabupaten": "Gayo Lues",
+      "kecamatan": "Pining",
+      "similarity": 0.8
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "JUD NGANTI",
+      "desa_shp": "Nganti",
+      "kdepum": "16.06.05.2002",
+      "kabupaten": "Musi Banyuasin",
+      "kecamatan": "Sanga Desa",
+      "similarity": 0.75
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "desa_trans": "TANABANG",
+      "desa_shp": "Tanabang Ulu",
+      "kdepum": "16.10.01.2012",
+      "kabupaten": "Ogan Ilir",
+      "kecamatan": "Muara Kuang",
+      "similarity": 0.8
+    },
+    {
+      "provinsi": "Bengkulu",
+      "desa_trans": "BUKIT MERBAU",
+      "desa_shp": "Bukit Batu",
+      "kdepum": "17.02.07.2028",
+      "kabupaten": "Rejang Lebong",
+      "kecamatan": "Padang Ulak Tanding",
+      "similarity": 0.8181818181818182
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "KOTAKAWAW",
+      "desa_shp": "Kota Kawau",
+      "kdepum": "53.11.14.2005",
+      "kabupaten": "Sumba Timur",
+      "kecamatan": "Kahaungu Eti",
+      "similarity": 0.8421052631578947
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "PALAHONANG",
+      "desa_shp": "Ala'ang",
+      "kdepum": "53.05.02.2023",
+      "kabupaten": "Alor",
+      "kecamatan": "Alor Barat Laut",
+      "similarity": 0.75
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "WEMARINGI",
+      "desa_shp": "Waimaringi",
+      "kdepum": "53.18.06.2015",
+      "kabupaten": "Sumba Barat Daya",
+      "kecamatan": "Kodi Bangedo",
+      "similarity": 0.8421052631578947
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "LAIMBARU",
+      "desa_shp": "Kabaru",
+      "kdepum": "53.11.09.2004",
+      "kabupaten": "Sumba Timur",
+      "kecamatan": "Rindi",
+      "similarity": 0.7142857142857143
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "LONGGE",
+      "desa_shp": "Oenggae",
+      "kdepum": "53.14.05.2013",
+      "kabupaten": "Rote Ndao",
+      "kecamatan": "Pantai Baru",
+      "similarity": 0.7692307692307693
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "RUMBA",
+      "desa_shp": "Meurumba",
+      "kdepum": "53.11.14.2003",
+      "kabupaten": "Sumba Timur",
+      "kecamatan": "Kahaungu Eti",
+      "similarity": 0.7692307692307693
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "SUNGAI BERUANG",
+      "desa_shp": "Sungai Burung",
+      "kdepum": "61.02.15.2006",
+      "kabupaten": "Mempawah",
+      "kecamatan": "Segedong",
+      "similarity": 0.8888888888888888
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "KETUNGAU HULU",
+      "desa_shp": "Keluas Hulu",
+      "kdepum": "61.10.11.2009",
+      "kabupaten": "Melawi",
+      "kecamatan": "Tanah Pinoh Barat",
+      "similarity": 0.75
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "SEMUNYING",
+      "desa_shp": "Semunying Jaya",
+      "kdepum": "61.07.07.2008",
+      "kabupaten": "Bengkayang",
+      "kecamatan": "Jagoi Babang",
+      "similarity": 0.782608695652174
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "TANJUNG SANTAI",
+      "desa_shp": "Tanjungsatai",
+      "kdepum": "61.11.04.2001",
+      "kabupaten": "Kayong Utara",
+      "kecamatan": "Pulau Maya",
+      "similarity": 0.9230769230769231
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "desa_trans": "TANJUNG SATAI",
+      "desa_shp": "Tanjungsatai",
+      "kdepum": "61.11.04.2001",
+      "kabupaten": "Kayong Utara",
+      "kecamatan": "Pulau Maya",
+      "similarity": 0.96
+    },
+    {
+      "provinsi": "Kalimantan Selatan",
+      "desa_trans": "ANGASANA",
+      "desa_shp": "Angsana",
+      "kdepum": "63.10.09.2005",
+      "kabupaten": "Tanah Bumbu",
+      "kecamatan": "Angsana",
+      "similarity": 0.9333333333333333
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "desa_trans": "KLADEN",
+      "desa_shp": "Keladen",
+      "kdepum": "64.01.02.2004",
+      "kabupaten": "Paser",
+      "kecamatan": "Tanjung Harapan",
+      "similarity": 0.9230769230769231
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "KINDADAL",
+      "desa_shp": "Kindandal",
+      "kdepum": "72.07.05.2006",
+      "kabupaten": "Banggai Kepulauan",
+      "kecamatan": "Liang",
+      "similarity": 0.9411764705882353
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "BOLUPUNTO",
+      "desa_shp": "Oluno",
+      "kdepum": "72.07.06.2022",
+      "kabupaten": "Banggai Kepulauan",
+      "kecamatan": "Bulagi",
+      "similarity": 0.7142857142857143
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "KANCU'U",
+      "desa_shp": "Kancuu",
+      "kdepum": "72.02.05.2012",
+      "kabupaten": "Poso",
+      "kecamatan": "Pamona Timur",
+      "similarity": 1.0
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "KABERA",
+      "desa_shp": "Kabetan",
+      "kdepum": "72.04.05.2009",
+      "kabupaten": "Toli Toli",
+      "kecamatan": "Ogodeide",
+      "similarity": 0.7692307692307693
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "BAHOEA",
+      "desa_shp": "Bahoea Reko-Reko",
+      "kdepum": "72.06.08.2001",
+      "kabupaten": "Morowali",
+      "kecamatan": "Bungku Barat",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "UETANGKO",
+      "desa_shp": "Tangkop",
+      "kdepum": "72.07.05.2001",
+      "kabupaten": "Banggai Kepulauan",
+      "kecamatan": "Liang",
+      "similarity": 0.8
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "LEMBAN TANGOA",
+      "desa_shp": "Lembantongoa",
+      "kdepum": "72.10.02.2017",
+      "kabupaten": "Sigi",
+      "kecamatan": "Palolo",
+      "similarity": 0.88
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "TOKALA",
+      "desa_shp": "Tokala Atas",
+      "kdepum": "72.12.08.2022",
+      "kabupaten": "Morowali Utara",
+      "kecamatan": "Bungku Utara",
+      "similarity": 0.7058823529411765
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "MOIAN",
+      "desa_shp": "Moa",
+      "kdepum": "72.10.06.2010",
+      "kabupaten": "Sigi",
+      "kecamatan": "Kulawi Selatan",
+      "similarity": 0.75
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "SUPI",
+      "desa_shp": "Suli",
+      "kdepum": "73.17.03.1003",
+      "kabupaten": "Luwu",
+      "kecamatan": "Suli",
+      "similarity": 0.75
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "BEKKAE",
+      "desa_shp": "Bakka",
+      "kdepum": "73.22.04.2009",
+      "kabupaten": "Luwu Utara",
+      "kecamatan": "Sabbang",
+      "similarity": 0.7272727272727273
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "LANTANG TALANG",
+      "desa_shp": "Lantang Tallang",
+      "kdepum": "73.22.03.2009",
+      "kabupaten": "Luwu Utara",
+      "kecamatan": "Masamba",
+      "similarity": 0.9655172413793104
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "desa_trans": "TANAKEKE",
+      "desa_shp": "Tanete",
+      "kdepum": "73.02.07.1001",
+      "kabupaten": "Bulukumba",
+      "kecamatan": "Bulukumpa",
+      "similarity": 0.7142857142857143
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "PULUHIALU",
+      "desa_shp": "Puuhialu",
+      "kdepum": "74.09.08.2008",
+      "kabupaten": "Konawe Utara",
+      "kecamatan": "Oheo",
+      "similarity": 0.9411764705882353
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "KOLAKA",
+      "desa_shp": "Kolakaasi",
+      "kdepum": "74.01.14.1002",
+      "kabupaten": "Kolaka",
+      "kecamatan": "Latambaga",
+      "similarity": 0.8
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "ANAUWA",
+      "desa_shp": "Anawua",
+      "kdepum": "74.01.24.2004",
+      "kabupaten": "Kolaka",
+      "kecamatan": "Toari",
+      "similarity": 0.8333333333333334
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "LAPOKAMATA",
+      "desa_shp": "Lampata",
+      "kdepum": "74.06.18.2005",
+      "kabupaten": "Bombana",
+      "kecamatan": "Rumbia Tengah",
+      "similarity": 0.7058823529411765
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "desa_trans": "WATUTINAWU",
+      "desa_shp": "Watulawu",
+      "kdepum": "74.02.28.2004",
+      "kabupaten": "Konawe",
+      "kecamatan": "Amonggedo",
+      "similarity": 0.7777777777777778
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "PANGEA",
+      "desa_shp": "Pangeya",
+      "kdepum": "75.02.02.2006",
+      "kabupaten": "Boalemo",
+      "kecamatan": "Wonosari",
+      "similarity": 0.9230769230769231
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "SALUANDEAN",
+      "desa_shp": "Salumokanan",
+      "kdepum": "76.03.15.2001",
+      "kabupaten": "Mamasa",
+      "kecamatan": "Rantebulahan Timur",
+      "similarity": 0.7619047619047619
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "SALUNDEANG",
+      "desa_shp": "Saluleang",
+      "kdepum": "76.03.05.2005",
+      "kabupaten": "Mamasa",
+      "kecamatan": "Tabulahan",
+      "similarity": 0.8421052631578947
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "RANO",
+      "desa_shp": "Salurano",
+      "kdepum": "76.03.09.2013",
+      "kabupaten": "Mamasa",
+      "kecamatan": "Tanduk Kalua",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "PIRIAN TAPIKO",
+      "desa_shp": "Piriang Tapiko",
+      "kdepum": "76.04.05.2006",
+      "kabupaten": "Polewali Mandar",
+      "kecamatan": "Tutar",
+      "similarity": 0.9629629629629629
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "SALULISU",
+      "desa_shp": "Pallis",
+      "kdepum": "76.04.12.2011",
+      "kabupaten": "Polewali Mandar",
+      "kecamatan": "Balanipa",
+      "similarity": 0.7142857142857143
+    },
+    {
+      "provinsi": "Maluku",
+      "desa_trans": "AIRMATAKABO",
+      "desa_shp": "Waematakabo",
+      "kdepum": "81.05.12.2003",
+      "kabupaten": "Seram Bagian Timur",
+      "kecamatan": "Bula Barat",
+      "similarity": 0.8181818181818182
+    },
+    {
+      "provinsi": "Maluku",
+      "desa_trans": "SARI PUTIH",
+      "desa_shp": "Sariputih",
+      "kdepum": "81.01.25.2002",
+      "kabupaten": "Maluku Tengah",
+      "kecamatan": "Seram Utara Timur Kobi",
+      "similarity": 0.9473684210526315
+    },
+    {
+      "provinsi": "Papua Barat",
+      "desa_trans": "MAIBUKI",
+      "desa_shp": "Mibi",
+      "kdepum": "92.01.01.2017",
+      "kabupaten": "Sorong",
+      "kecamatan": "Makbon",
+      "similarity": 0.7272727272727273
+    }
+  ],
+  "no_match": [
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "SAMAR KILANG",
+      "desa_norm": "SAMAR KILANG",
+      "top_candidates": [
+        [
+          "Samar Dua",
+          "11.10.09.2004",
+          "0.67"
+        ],
+        [
+          "Gawar Belangi",
+          "11.13.04.2028",
+          "0.64"
+        ],
+        [
+          "Air Pinang",
+          "11.09.04.2024",
+          "0.64"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "RELAS PAMEU",
+      "desa_norm": "RELAS PAMEU",
+      "top_candidates": [
+        [
+          "Lampageu",
+          "11.06.08.2004",
+          "0.63"
+        ],
+        [
+          "Meunasah Papeun",
+          "11.06.21.2001",
+          "0.62"
+        ],
+        [
+          "Blang Pateuk",
+          "11.15.02.2017",
+          "0.61"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Aceh",
+      "desa_trans": "TEGET",
+      "desa_norm": "TEGET",
+      "top_candidates": [
+        [
+          "Telege Atu",
+          "11.04.11.2020",
+          "0.67"
+        ],
+        [
+          "Teungkluet",
+          "11.18.08.2015",
+          "0.67"
+        ],
+        [
+          "Seuriget",
+          "11.74.02.2009",
+          "0.62"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "SANABIBI",
+      "desa_norm": "SANABIBI",
+      "top_candidates": [
+        [
+          "Bani-Bani",
+          "53.21.06.2005",
+          "0.62"
+        ],
+        [
+          "Kenebibi",
+          "53.04.05.2004",
+          "0.62"
+        ],
+        [
+          "Lamanabi",
+          "53.06.05.2023",
+          "0.62"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "REMASINGFUI",
+      "desa_norm": "REMASINGFUI",
+      "top_candidates": [
+        [
+          "Manufui",
+          "53.02.25.2003",
+          "0.67"
+        ],
+        [
+          "Tasinifu",
+          "53.03.13.2001",
+          "0.63"
+        ],
+        [
+          "Kamaifui",
+          "53.05.12.2005",
+          "0.63"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "PEIBULAK",
+      "desa_norm": "PEIBULAK",
+      "top_candidates": [
+        [
+          "Waiburak",
+          "53.06.10.2007",
+          "0.62"
+        ],
+        [
+          "Demulaka",
+          "53.08.16.2003",
+          "0.62"
+        ],
+        [
+          "Tebuk",
+          "53.07.04.2003",
+          "0.62"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "ULUKLUBUK",
+      "desa_norm": "ULUKLUBUK",
+      "top_candidates": [
+        [
+          "Ulupulu",
+          "53.16.02.2009",
+          "0.62"
+        ],
+        [
+          "Ulu Belu",
+          "53.09.02.2036",
+          "0.59"
+        ],
+        [
+          "Oelbubuk",
+          "53.02.30.2001",
+          "0.59"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "YUBUWAI",
+      "desa_norm": "YUBUWAI",
+      "top_candidates": [
+        [
+          "Uluwae I",
+          "53.09.15.2009",
+          "0.67"
+        ],
+        [
+          "Kuruwaki",
+          "53.11.10.2002",
+          "0.67"
+        ],
+        [
+          "Uluwae II",
+          "53.09.15.2010",
+          "0.62"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "IKISEO GEZU",
+      "desa_norm": "IKISEO GEZU",
+      "top_candidates": [
+        [
+          "Lise Pu'u",
+          "53.08.08.2024",
+          "0.53"
+        ],
+        [
+          "Lisedetu",
+          "53.08.08.2016",
+          "0.53"
+        ],
+        [
+          "Keoen",
+          "53.14.05.2007",
+          "0.50"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "LA'TAPU RUMBU",
+      "desa_norm": "LATAPU RUMBU",
+      "top_candidates": [
+        [
+          "Watu Rambung",
+          "53.15.09.2011",
+          "0.67"
+        ],
+        [
+          "Mata Lombu",
+          "53.18.10.2014",
+          "0.64"
+        ],
+        [
+          "Payola Umbu",
+          "53.18.01.2014",
+          "0.61"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "desa_trans": "REMANGSIFUI",
+      "desa_norm": "REMANGSIFUI",
+      "top_candidates": [
+        [
+          "Manufui",
+          "53.02.25.2003",
+          "0.67"
+        ],
+        [
+          "Kamaifui",
+          "53.05.12.2005",
+          "0.63"
+        ],
+        [
+          "Karang Sirih",
+          "53.02.01.1006",
+          "0.61"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "desa_trans": "PASER",
+      "desa_norm": "PASER",
+      "top_candidates": [
+        [
+          "Empas",
+          "64.07.06.2001",
+          "0.60"
+        ],
+        [
+          "Muser",
+          "64.01.10.2006",
+          "0.60"
+        ],
+        [
+          "Dempar",
+          "64.07.16.2001",
+          "0.55"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Kalimantan Utara",
+      "desa_trans": "SEPUNGGUR",
+      "desa_norm": "SEPUNGGUR",
+      "top_candidates": [
+        [
+          "Seputuk",
+          "65.04.05.2001",
+          "0.62"
+        ],
+        [
+          "Sengkong",
+          "65.04.02.2002",
+          "0.59"
+        ],
+        [
+          "Seruyung",
+          "65.02.07.2006",
+          "0.59"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "BULUPOUNTU",
+      "desa_norm": "BULUPOUNTU",
+      "top_candidates": [
+        [
+          "Buntuna",
+          "72.04.07.2008",
+          "0.59"
+        ],
+        [
+          "Bulu",
+          "72.01.07.2039",
+          "0.57"
+        ],
+        [
+          "Bulungkobit",
+          "72.07.04.2016",
+          "0.57"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "desa_trans": "RENO RENO",
+      "desa_norm": "RENO RENO",
+      "top_candidates": [
+        [
+          "Mendono",
+          "72.01.03.1010",
+          "0.62"
+        ],
+        [
+          "Ronononcu",
+          "72.02.21.1004",
+          "0.56"
+        ],
+        [
+          "Menyo'e",
+          "72.12.09.2014",
+          "0.53"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Gorontalo",
+      "desa_trans": "SANDALAN",
+      "desa_norm": "SANDALAN",
+      "top_candidates": [
+        [
+          "Cisadane",
+          "75.05.02.2023",
+          "0.62"
+        ],
+        [
+          "Gandaria",
+          "75.01.13.2016",
+          "0.62"
+        ],
+        [
+          "Pangadaa",
+          "75.01.24.2008",
+          "0.62"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "desa_trans": "TANJUNG CINA",
+      "desa_norm": "TANJUNG CINA",
+      "top_candidates": [
+        [
+          "Tandung",
+          "76.04.01.2006",
+          "0.63"
+        ],
+        [
+          "Tangnga Tangnga",
+          "76.04.01.2003",
+          "0.59"
+        ],
+        [
+          "Matangnga",
+          "76.04.09.1001",
+          "0.57"
+        ]
+      ]
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "desa_trans": "MURNI",
+      "desa_norm": "MURNI",
+      "top_candidates": [
+        [
+          "Gamsungi",
+          "82.01.08.2006",
+          "0.62"
+        ],
+        [
+          "Gamsungi",
+          "82.03.05.2004",
+          "0.62"
+        ],
+        [
+          "Gamsungi",
+          "82.03.22.2010",
+          "0.62"
+        ]
+      ]
+    }
+  ]
+}

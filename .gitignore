@@ -100,3 +100,9 @@ yarn-error.log*
 # ==========================================
 k8s/secrets.yaml
 k8s/*.secret.yaml
+
+# ==========================================
+# LARGE DATA FILES (not for git)
+# ==========================================
+data/batas desa/
+.venv/
