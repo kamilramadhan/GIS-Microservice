@@ -102,7 +102,6 @@ k8s/secrets.yaml
 k8s/*.secret.yaml
 
 # ==========================================
-# LARGE DATA FILES (not for git)
+# LARGE FILES & VIRTUAL ENV
 # ==========================================
-data/batas desa/
 .venv/
