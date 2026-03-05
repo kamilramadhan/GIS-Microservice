@@ -91,6 +91,11 @@ const CONFIG = {
             { threshold: 0, color: '#4299e1', label: 'Harga rendah', description: '< 0.90' },
             { threshold: 0.90, color: '#fed976', label: 'Harga normal', description: '0.90 - 1.10' },
             { threshold: 1.10, color: '#f56565', label: 'Harga tinggi', description: '> 1.10' }
+        ],
+        opportunity: [
+            { threshold: 0, color: '#4299e1', label: 'Peluang rendah', description: '< 0.90' },
+            { threshold: 0.90, color: '#fed976', label: 'Peluang sedang', description: '0.90 - 1.10' },
+            { threshold: 1.10, color: '#f56565', label: 'Peluang tinggi', description: '> 1.10' }
         ]
     },
 
@@ -158,6 +163,7 @@ const AppState = {
     productionData: null,
     priceData: null,
     economicIndexData: null,
+    opportunityData: null,
     geoJsonData: null,
     map: null,
     geoJsonLayer: null,
@@ -797,6 +803,8 @@ async function loadData() {
             await loadProductivityData();
         } else if (AppState.currentMode === 'economic') {
             await loadEconomicData();
+        } else if (AppState.currentMode === 'opportunity') {
+            await loadOpportunityData();
         }
 
         updateDataSourceFooter();
@@ -924,11 +932,85 @@ async function loadEconomicData() {
     }
 }
 
-
 /**
- * Data Joining Strategy: Menggabungkan GeoJSON dengan Data
- * Mendukung mode productivity dan economic
+ * Load opportunity data (ICOP = IPP × IPE)
+ * Requires both production data (BPS) and price data (BI) — only 2025 & 2026 available
  */
+async function loadOpportunityData() {
+    console.log('📊 Loading Opportunity data (ICOP = IPP × IPE)...');
+
+    try {
+        // 1. Load production data (IPP source)
+        await loadLocalProductionData();
+
+        // 2. Load price data (IPE source)
+        const biService = new BIPriceService();
+        AppState.economicIndexData = await biService.getPriceData(
+            AppState.currentYear,
+            AppState.currentMonth
+        );
+
+        if (!AppState.productionData || AppState.productionData.length === 0 ||
+            !AppState.economicIndexData || AppState.economicIndexData.length === 0) {
+            console.warn('⚠️  Insufficient data for ICOP calculation');
+            AppState.opportunityData = [];
+            AppState.dataSource = 'none';
+            return;
+        }
+
+        // 3. Build IPP lookup per province
+        const nationalAvg = getNationalAverageProduction(AppState.currentMonth);
+        const ippLookup = new Map();
+        AppState.productionData.forEach(p => {
+            const ipp = nationalAvg > 0 ? (p[AppState.currentMonth] || 0) / nationalAvg : 0;
+            ippLookup.set(p.kode_prov, { ...p, ipp: Math.round(ipp * 100) / 100 });
+        });
+
+        // 4. Compute ICOP = IPP × IPE for each province
+        AppState.opportunityData = AppState.economicIndexData
+            .map(ep => {
+                const pd = ippLookup.get(ep.kode_prov);
+                const ipp = pd ? pd.ipp : 0;
+                const ipe = ep.ipe || 0;
+                const icop = Math.round(ipp * ipe * 100) / 100;
+                let kategori = 'Sedang';
+                if (icop > 1.10) kategori = 'Tinggi';
+                else if (icop < 0.90) kategori = 'Rendah';
+
+                const monthlyPrices = {};
+                CONFIG.MONTH_KEYS.forEach(mk => { monthlyPrices[mk] = ep[mk] || 0; });
+
+                return {
+                    kode_prov: ep.kode_prov,
+                    provinsi: ep.provinsi,
+                    icop,
+                    ipp,
+                    ipe: ep.ipe,
+                    kategori,
+                    harga: ep.harga,
+                    harga_nasional: ep.harga_nasional,
+                    production: pd ? (pd[AppState.currentMonth] || 0) : 0,
+                    national_avg_production: Math.round(nationalAvg),
+                    ...monthlyPrices
+                };
+            })
+            .filter(item => item.ipp > 0 && item.ipe > 0);
+
+        AppState.dataSource = 'bi-local';
+        AppState.lastUpdate = new Date().toISOString();
+
+        console.log('✓ Opportunity data computed:', {
+            year: AppState.currentYear,
+            month: AppState.currentMonth,
+            provinces: AppState.opportunityData.length
+        });
+
+    } catch (error) {
+        console.error('✗ Failed to load opportunity data:', error);
+        AppState.opportunityData = [];
+        AppState.dataSource = 'none';
+    }
+}
 function createDataLookup() {
     const lookup = new Map();
 
@@ -938,6 +1020,10 @@ function createDataLookup() {
         });
     } else if (AppState.currentMode === 'economic') {
         AppState.economicIndexData?.forEach(province => {
+            lookup.set(province.kode_prov, province);
+        });
+    } else if (AppState.currentMode === 'opportunity') {
+        AppState.opportunityData?.forEach(province => {
             lookup.set(province.kode_prov, province);
         });
     }
@@ -962,6 +1048,8 @@ function getValue(kodeProv, month) {
         return ipp;
     } else if (AppState.currentMode === 'economic') {
         return provinceData.ipe || 0;
+    } else if (AppState.currentMode === 'opportunity') {
+        return provinceData.icop || 0;
     }
 
     return 0;
@@ -991,6 +1079,8 @@ function getProduction(kodeProv, month) {
 function getColor(value) {
     const colorScale = AppState.currentMode === 'productivity'
         ? CONFIG.COLOR_SCALES.productivity
+        : AppState.currentMode === 'opportunity'
+        ? CONFIG.COLOR_SCALES.opportunity
         : CONFIG.COLOR_SCALES.economic;
 
     for (let i = colorScale.length - 1; i >= 0; i--) {
@@ -1102,6 +1192,18 @@ function onEachFeature(feature, layer) {
                 <div class="popup-production">Rp ${formatNumber(provinceData.harga)} /kg</div>
                 <div class="popup-unit">Harga Beras (${monthName})</div>
                 <div class="popup-unit">IPE: ${provinceData.ipe} (${provinceData.kategori})</div>
+            `;
+        }
+    } else if (AppState.currentMode === 'opportunity') {
+        const lookup = createDataLookup();
+        const provinceData = lookup.get(kodeProv);
+
+        if (provinceData) {
+            popupContent = `
+                <div class="popup-title">${feature.properties.PROVINSI}</div>
+                <div class="popup-production">ICOP: ${provinceData.icop.toFixed(2)}</div>
+                <div class="popup-unit">IPP: ${provinceData.ipp} &times; IPE: ${provinceData.ipe}</div>
+                <div class="popup-unit">Peluang ${provinceData.kategori}</div>
             `;
         }
     }
@@ -1423,6 +1525,23 @@ function updateChoropleth() {
                     <div class="popup-unit">Data tidak tersedia</div>
                 `;
             }
+        } else if (AppState.currentMode === 'opportunity') {
+            const lookup = createDataLookup();
+            const provinceData = lookup.get(kodeProv);
+            if (provinceData) {
+                popupContent = `
+                    <div class="popup-title">${layer.feature.properties.PROVINSI}</div>
+                    <div class="popup-production">ICOP: ${provinceData.icop.toFixed(2)}</div>
+                    <div class="popup-unit">IPP: ${provinceData.ipp} &times; IPE: ${provinceData.ipe}</div>
+                    <div class="popup-unit">Peluang ${provinceData.kategori}</div>
+                `;
+            } else {
+                popupContent = `
+                    <div class="popup-title">${layer.feature.properties.PROVINSI}</div>
+                    <div class="popup-production">-</div>
+                    <div class="popup-unit">Data tidak tersedia</div>
+                `;
+            }
         } else {
             const ipp = getValue(kodeProv, AppState.currentMonth);
             const lookup = createDataLookup();
@@ -1486,6 +1605,21 @@ function updateDetailPanel(kodeProv, provinsiName) {
         return;
     }
 
+    // Check if in opportunity mode with no data
+    if (AppState.currentMode === 'opportunity' && (!AppState.opportunityData || AppState.opportunityData.length === 0)) {
+        detailContainer.innerHTML = `
+            <div class="detail-content" style="text-align: center; padding: 2rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                <h3 style="color: #667eea; margin-bottom: 1rem;">Data Tidak Tersedia</h3>
+                <p style="color: #64748b; line-height: 1.6;">
+                    Data ICOP tidak tersedia untuk periode ini.<br>
+                    Pastikan data BPS (IPP) dan BI (IPE) tersedia untuk tahun yang dipilih.
+                </p>
+            </div>
+        `;
+        return;
+    }
+
     const lookup = createDataLookup();
     const provinceData = lookup.get(kodeProv);
 
@@ -1498,6 +1632,8 @@ function updateDetailPanel(kodeProv, provinsiName) {
         updateProductivityDetailPanel(detailContainer, provinceData, provinsiName, kodeProv);
     } else if (AppState.currentMode === 'economic') {
         updateEconomicDetailPanel(detailContainer, provinceData, provinsiName, kodeProv);
+    } else if (AppState.currentMode === 'opportunity') {
+        updateOpportunityDetailPanel(detailContainer, provinceData, provinsiName, kodeProv);
     }
 }
 
@@ -1669,6 +1805,79 @@ function updateEconomicDetailPanel(container, provinceData, provinsiName, kodePr
 }
 
 /**
+ * Update detail panel for opportunity mode (ICOP = IPP × IPE)
+ */
+function updateOpportunityDetailPanel(container, provinceData, provinsiName, kodeProv) {
+    const monthName = CONFIG.MONTH_NAMES[AppState.currentMonth];
+    const { icop, ipp, ipe, kategori, harga, harga_nasional, production, national_avg_production } = provinceData;
+
+    let categoryColor = '#fed976';
+    let categoryLabel = 'Peluang Sedang';
+    if (icop > 1.10) { categoryColor = '#f56565'; categoryLabel = 'Peluang Tinggi'; }
+    else if (icop < 0.90) { categoryColor = '#4299e1'; categoryLabel = 'Peluang Rendah'; }
+
+    container.innerHTML = `
+        <div class="detail-content">
+            <div class="detail-header">
+                <h3 class="detail-province-name">${provinsiName}</h3>
+                <p class="detail-province-code">Kode Provinsi: ${kodeProv}</p>
+            </div>
+
+            <div class="detail-production">
+                <div class="detail-production-label">ICOP (Indeks Peluang Komoditas)</div>
+                <div class="detail-production-value">${icop.toFixed(2)}</div>
+                <div class="detail-production-unit" style="display: inline-block; background: ${categoryColor}; color: white; padding: 4px 16px; border-radius: 20px; font-weight: 600; font-size: 0.8rem; margin-top: 4px;">${categoryLabel}</div>
+            </div>
+
+            <div class="detail-chart">
+                <h4 class="detail-chart-title">Komponen ICOP — ${monthName} ${AppState.currentYear}</h4>
+                <div class="detail-comparison">
+                    <div class="comparison-card primary">
+                        <div class="comparison-label">IPP (Produktivitas)</div>
+                        <div class="comparison-value">${ipp.toFixed(2)}</div>
+                        <div class="comparison-unit">${formatNumber(production)} ton</div>
+                    </div>
+                    <div class="comparison-card secondary">
+                        <div class="comparison-label">IPE (Ekonomi)</div>
+                        <div class="comparison-value">${ipe.toFixed(2)}</div>
+                        <div class="comparison-unit">Rp ${formatNumber(harga)} /kg</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-chart">
+                <h4 class="detail-chart-title">Rata-rata Nasional</h4>
+                <div class="detail-comparison">
+                    <div class="comparison-card primary">
+                        <div class="comparison-label">Produksi Nasional</div>
+                        <div class="comparison-value">${formatNumber(national_avg_production)}</div>
+                        <div class="comparison-unit">ton</div>
+                    </div>
+                    <div class="comparison-card secondary">
+                        <div class="comparison-label">Harga Nasional</div>
+                        <div class="comparison-value">Rp ${formatNumber(harga_nasional)}</div>
+                        <div class="comparison-unit">/kg</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interpretation-box">
+                <strong>Interpretasi ICOP</strong>
+                <div class="interpretation-text">
+                ${icop < 0.90 ?
+                    '⚠ Peluang komoditas rendah — produksi dan/atau harga di bawah rata-rata nasional.' :
+                    icop > 1.10 ?
+                    '✓ Peluang komoditas tinggi — produksi kuat dengan harga menguntungkan di atas rata-rata.' :
+                    '● Peluang komoditas sedang — kombinasi produksi dan harga dalam kisaran normal.'
+                }
+                <br><br><span style="font-size:0.8rem;color:#64748b;">ICOP = IPP × IPE = ${ipp.toFixed(2)} × ${ipe.toFixed(2)} = ${icop.toFixed(2)}</span>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+/**
  * Update statistik nasional - mendukung mode productivity dan economic
  */
 function updateStatistics() {
@@ -1679,6 +1888,8 @@ function updateStatistics() {
         updateProductivityStatistics(statsContainer, statsTitle);
     } else if (AppState.currentMode === 'economic') {
         updateEconomicStatistics(statsContainer, statsTitle);
+    } else if (AppState.currentMode === 'opportunity') {
+        updateOpportunityStatistics(statsContainer, statsTitle);
     }
 }
 
@@ -1823,8 +2034,62 @@ function updateEconomicStatistics(container, title) {
     `;
 }
 
-// ==========================================
-// 8. EVENT LISTENERS
+/**
+ * Update statistics for opportunity mode
+ */
+function updateOpportunityStatistics(container, title) {
+    title.textContent = 'Statistik ICOP Nasional';
+
+    if (!AppState.opportunityData || AppState.opportunityData.length === 0) {
+        container.innerHTML = `
+            <div style="grid-column: 1 / -1; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                <div style="font-size: 1rem; font-weight: 600;">Data ICOP tidak tersedia</div>
+                <div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.5rem;">Tidak cukup data IPP atau IPE untuk tahun yang dipilih</div>
+            </div>
+        `;
+        return;
+    }
+
+    const icops = AppState.opportunityData.map(p => p.icop);
+    const avgIcop = icops.reduce((s, v) => s + v, 0) / icops.length;
+    const maxIcop = Math.max(...icops);
+    const minIcop = Math.min(...icops);
+
+    const maxProv = AppState.opportunityData.find(p => p.icop === maxIcop);
+    const minProv = AppState.opportunityData.find(p => p.icop === minIcop);
+
+    const low = AppState.opportunityData.filter(p => p.kategori === 'Rendah').length;
+    const mid = AppState.opportunityData.filter(p => p.kategori === 'Sedang').length;
+    const high = AppState.opportunityData.filter(p => p.kategori === 'Tinggi').length;
+
+    container.innerHTML = `
+        <div class="stat-item">
+            <span class="stat-label">Rata-rata ICOP:</span>
+            <span class="stat-value">${avgIcop.toFixed(2)}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Provinsi Ikut Hitung:</span>
+            <span class="stat-value">${AppState.opportunityData.length} provinsi</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">ICOP Tertinggi:</span>
+            <span class="stat-value">${maxProv.provinsi}<br>ICOP: ${maxIcop.toFixed(2)} (IPP: ${maxProv.ipp} × IPE: ${maxProv.ipe})</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">ICOP Terendah:</span>
+            <span class="stat-value">${minProv.provinsi}<br>ICOP: ${minIcop.toFixed(2)} (IPP: ${minProv.ipp} × IPE: ${minProv.ipe})</span>
+        </div>
+        <div class="stat-item" style="grid-column: 1 / -1; border-top: 1px solid var(--border-color); padding-top: 0.5rem; margin-top: 0.5rem;">
+            <span class="stat-label">Distribusi:</span>
+            <span class="stat-value">
+                <span style="color: #4299e1;">● ${low} rendah</span> |
+                <span style="color: #eab308;">● ${mid} sedang</span> |
+                <span style="color: #f56565;">● ${high} tinggi</span>
+            </span>
+        </div>
+    `;
+}
 // ==========================================
 
 /**
@@ -1899,6 +2164,21 @@ function setupEventListeners() {
         AppState.currentYear = e.target.value;
         console.log('Year changed to:', AppState.currentYear);
 
+        // For opportunity mode: BI 2026 only has Jan & Feb
+        // If switching to 2026 with an invalid month, reset month to 'feb'
+        if (AppState.currentMode === 'opportunity' && AppState.currentYear === '2026') {
+            const biMonths2026 = ['jan', 'feb'];
+            if (!biMonths2026.includes(AppState.currentMonth)) {
+                AppState.currentMonth = 'feb';
+                const monthSelect = document.getElementById('monthSelect');
+                const monthSlider = document.getElementById('monthSlider');
+                const sliderValue = document.getElementById('sliderValue');
+                if (monthSelect) monthSelect.value = 'feb';
+                if (monthSlider) monthSlider.value = CONFIG.MONTH_KEYS.indexOf('feb');
+                if (sliderValue) sliderValue.textContent = CONFIG.MONTH_NAMES['feb'];
+            }
+        }
+
         // Reload data untuk tahun baru
         showLoading(true);
         await loadData();
@@ -1916,10 +2196,17 @@ function setupEventListeners() {
         monthSlider.value = monthIndex;
         sliderValue.textContent = CONFIG.MONTH_NAMES[AppState.currentMonth];
 
-        // Update map if in economic mode (price changes by month)
+        // Update map — reload data for modes that depend on month
         if (AppState.currentMode === 'economic') {
             showLoading(true);
             loadEconomicData().then(() => {
+                updateChoropleth();
+                updateStatistics();
+                showLoading(false);
+            });
+        } else if (AppState.currentMode === 'opportunity') {
+            showLoading(true);
+            loadOpportunityData().then(() => {
                 updateChoropleth();
                 updateStatistics();
                 showLoading(false);
@@ -1939,10 +2226,17 @@ function setupEventListeners() {
         monthSelect.value = AppState.currentMonth;
         sliderValue.textContent = CONFIG.MONTH_NAMES[AppState.currentMonth];
 
-        // Update map if in economic mode
+        // Update map — reload data for modes that depend on month
         if (AppState.currentMode === 'economic') {
             showLoading(true);
             loadEconomicData().then(() => {
+                updateChoropleth();
+                updateStatistics();
+                showLoading(false);
+            });
+        } else if (AppState.currentMode === 'opportunity') {
+            showLoading(true);
+            loadOpportunityData().then(() => {
                 updateChoropleth();
                 updateStatistics();
                 showLoading(false);
@@ -1979,11 +2273,47 @@ function updateControlVisibility() {
     const commodityGroup = document.getElementById('commodityGroup');
     const marketTypeGroup = document.getElementById('marketTypeGroup');
     const controlPanelTitle = document.getElementById('controlPanelTitle');
+    const yearSelect = document.getElementById('yearSelect');
 
     // Always hide commodity and market type selectors (not used - only Beras monthly data)
     commodityGroup.style.display = 'none';
     marketTypeGroup.style.display = 'none';
     controlPanelTitle.textContent = 'Filter & Kontrol';
+
+    // Update year options based on mode
+    if (AppState.currentMode === 'productivity' || AppState.currentMode === 'opportunity') {
+        const limitedYears = ['2026', '2025'];
+        const currentYear = yearSelect.value;
+        yearSelect.innerHTML = limitedYears.map(y =>
+            `<option value="${y}"${y === currentYear ? ' selected' : ''}>${y}</option>`
+        ).join('');
+        // If current year not in limited years, reset to 2025
+        if (!limitedYears.includes(AppState.currentYear)) {
+            AppState.currentYear = '2025';
+            yearSelect.value = '2025';
+        }
+
+        // For opportunity mode: BI 2026 data only has Jan & Feb
+        // If year is 2026 and current month has no BI data, reset month to 'feb'
+        if (AppState.currentMode === 'opportunity' && AppState.currentYear === '2026') {
+            const biMonths2026 = ['jan', 'feb'];
+            if (!biMonths2026.includes(AppState.currentMonth)) {
+                AppState.currentMonth = 'feb';
+                const monthSelect = document.getElementById('monthSelect');
+                const monthSlider = document.getElementById('monthSlider');
+                const sliderValue = document.getElementById('sliderValue');
+                if (monthSelect) monthSelect.value = 'feb';
+                if (monthSlider) monthSlider.value = CONFIG.MONTH_KEYS.indexOf('feb');
+                if (sliderValue) sliderValue.textContent = CONFIG.MONTH_NAMES['feb'];
+            }
+        }
+    } else {
+        const allYears = ['2026', '2025', '2024', '2023', '2022', '2021', '2020', '2019'];
+        const currentYear = yearSelect.value;
+        yearSelect.innerHTML = allYears.map(y =>
+            `<option value="${y}"${y === currentYear ? ' selected' : ''}>${y}</option>`
+        ).join('');
+    }
 }
 
 /**
@@ -2032,6 +2362,31 @@ function updateLegend() {
                 • 1.00 = sama dengan nasional<br>
                 • &gt; 1.00 = lebih mahal dari nasional<br>
                 • &lt; 1.00 = lebih murah dari nasional
+            </div>
+        `;
+    } else if (AppState.currentMode === 'opportunity') {
+        legendContainer.innerHTML = `
+            <h3 class="legend-title">Legenda ICOP (Indeks Peluang Komoditas)</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #4299e1;"></span>
+                    <span class="legend-text">Potensi Rendah (&lt; 0.90)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #fed976;"></span>
+                    <span class="legend-text">Potensi Sedang (0.90 - 1.10)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #f56565;"></span>
+                    <span class="legend-text">Potensi Tinggi (&gt; 1.10)</span>
+                </div>
+            </div>
+            <div style="margin-top: 1rem; padding: 0.75rem; background: #f0f9ff; border-radius: 0.5rem; font-size: 0.875rem;">
+                <strong>Rumus ICOP:</strong><br>
+                ICOP = IPP &times; IPE<br>
+                • &gt; 1.10 = produksi kuat &amp; harga tinggi<br>
+                • 0.90 – 1.10 = peluang normal<br>
+                • &lt; 0.90 = produksi/harga rendah
             </div>
         `;
     }
@@ -2139,9 +2494,9 @@ function updateDataSourceFooter() {
 
     let sourceText;
 
-    // Handle economic mode with no data
-    if (AppState.currentMode === 'economic' && AppState.dataSource === 'none') {
-        sourceText = `🚧 Economic Mode: Under Development - BI.go.id web scraper in progress`;
+    // Handle economic/opportunity mode with no data
+    if ((AppState.currentMode === 'economic' || AppState.currentMode === 'opportunity') && AppState.dataSource === 'none') {
+        sourceText = `⚠ Data tidak tersedia untuk periode ${AppState.currentMonth} ${AppState.currentYear}`;
     }
     // Handle BPS WebAPI
     else if (AppState.dataSource === 'bps') {
@@ -2154,6 +2509,14 @@ function updateDataSourceFooter() {
     // Handle BI data (when available)
     else if (AppState.dataSource === 'bi') {
         sourceText = `Data dari Bank Indonesia | Terakhir diperbarui: ${new Date(AppState.lastUpdate).toLocaleString('id-ID')}`;
+    }
+    // Handle BI local data (economic / opportunity mode)
+    else if (AppState.dataSource === 'bi-local') {
+        if (AppState.currentMode === 'opportunity') {
+            sourceText = `ICOP = IPP (BPS ${AppState.currentYear}) × IPE (BI ${AppState.currentYear}) | Terakhir dihitung: ${new Date(AppState.lastUpdate).toLocaleString('id-ID')}`;
+        } else {
+            sourceText = `Data dari Bank Indonesia (lokal) | Terakhir diperbarui: ${new Date(AppState.lastUpdate).toLocaleString('id-ID')}`;
+        }
     }
     // Default fallback
     else {
