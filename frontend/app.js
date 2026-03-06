@@ -2164,9 +2164,9 @@ function setupEventListeners() {
         AppState.currentYear = e.target.value;
         console.log('Year changed to:', AppState.currentYear);
 
-        // For opportunity mode: BI 2026 only has Jan & Feb
+        // For opportunity/economic mode: BI 2026 only has Jan & Feb
         // If switching to 2026 with an invalid month, reset month to 'feb'
-        if (AppState.currentMode === 'opportunity' && AppState.currentYear === '2026') {
+        if ((AppState.currentMode === 'opportunity' || AppState.currentMode === 'economic') && AppState.currentYear === '2026') {
             const biMonths2026 = ['jan', 'feb'];
             if (!biMonths2026.includes(AppState.currentMonth)) {
                 AppState.currentMonth = 'feb';
@@ -2281,7 +2281,7 @@ function updateControlVisibility() {
     controlPanelTitle.textContent = 'Filter & Kontrol';
 
     // Update year options based on mode
-    if (AppState.currentMode === 'productivity' || AppState.currentMode === 'opportunity') {
+    if (AppState.currentMode === 'productivity' || AppState.currentMode === 'opportunity' || AppState.currentMode === 'economic') {
         const limitedYears = ['2026', '2025'];
         const currentYear = yearSelect.value;
         yearSelect.innerHTML = limitedYears.map(y =>
@@ -2293,9 +2293,9 @@ function updateControlVisibility() {
             yearSelect.value = '2025';
         }
 
-        // For opportunity mode: BI 2026 data only has Jan & Feb
+        // For opportunity/economic mode: BI 2026 data only has Jan & Feb
         // If year is 2026 and current month has no BI data, reset month to 'feb'
-        if (AppState.currentMode === 'opportunity' && AppState.currentYear === '2026') {
+        if ((AppState.currentMode === 'opportunity' || AppState.currentMode === 'economic') && AppState.currentYear === '2026') {
             const biMonths2026 = ['jan', 'feb'];
             if (!biMonths2026.includes(AppState.currentMonth)) {
                 AppState.currentMonth = 'feb';
